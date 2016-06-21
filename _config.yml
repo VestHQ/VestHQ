@@ -7,8 +7,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-gems: [bourbon, neat]
-
 # Site settings
 title: Fintech to Go
 description: "The fastest way to keep up with Fintech news."
