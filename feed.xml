@@ -1,0 +1,21 @@
+---
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% for article in site.posts limit:5 %}
+      <item>
+        <title>{{ article.article-title | xml_escape }}</title>
+        <description>{{ article.article-author | xml_escape }}</description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ article.article-link }}</link>
+        <guid isPermaLink="true">{{ article.article-link }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
