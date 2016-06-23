@@ -8,10 +8,10 @@ sass:
   style: compressed
 
 # Site settings
-title: Fintech to Go
-description: "The fastest way to keep up with Fintech news."
+title: VestHQ
+description: "A fintech lab."
 keywords: fintech, news, media
 email: tripathi@vesthq.com
-url: http://www.fintechtogo.com
-repository: https://github.com/vesthq/fintechtogo
+url: http://www.vesthq.com
+repository: https://github.com/vesthq/vesthq
 google_analytics: UA-79162503-1

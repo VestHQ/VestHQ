@@ -1,12 +1,7 @@
 ---
 title: About
 ---
+VestHQ [title]
+We are a fintech lab. Our experiments are built to empower. Our latest project is [Fintech to Go](http://fintechtogo.com).
 
-Fintech is all around us and growing. If you're interested in this industry, FinTech to Go is the fastest way for you to access the best content quickly.
-
-Sources 200K, then individually curated
-
-We are a project of [Vest](www.vesthq.com). If you'd like to help, please share on [twitter](twitter.com) or [email feedback](mailto:tripathi@vesthq.com).
-
-Section to the side...
-Get more great content directly to your inbox. See all of our posts... Things like that
+For our most adventurous fans, join our [beta list](http://www.tinyletter.com/vest), and for something lighter, follow our journey on these networks - [Medium](https://medium.com/voyage-into-fintech) [Twitter](http://www.twitter.com/thisisvest) [RSS](www.vesthq.com/feed.xml)

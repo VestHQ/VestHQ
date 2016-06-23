@@ -8,13 +8,13 @@ permalink: /feed.xml
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    {% for article in site.posts limit:5 %}
+    {% for post in site.posts %}
       <item>
-        <title>{{ article.article-title | xml_escape }}</title>
-        <description>{{ article.article-author | xml_escape }}</description>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.description | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ article.article-link }}</link>
-        <guid isPermaLink="true">{{ article.article-link }}</guid>
+        <link>{{ post.link }}</link>
+        <guid isPermaLink="true">{{ post.link }}</guid>
       </item>
     {% endfor %}
   </channel>
