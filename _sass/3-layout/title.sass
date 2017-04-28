@@ -1,18 +1,23 @@
-// description styles
-#description
-  margin: 30% 0 0 0
+//title styles
+#logo
+  margin: 5% 0 0 5%
+
+#title
+  margin: 15px 0 0 0
+
+#tagline
+  margin: 15px auto
   text-align: center
 
 .rw-sentence
   text-align: center
-  margin: 6% 0 0 0
-  span
-    white-space: nowrap
+  // span
+  //   white-space: nowrap
 
 .rw-words
   display: inline
   text-align: left
-  text-indent: 0.3em
+  text-indent: 0.1em
   span
     position: absolute
     opacity: 0
@@ -85,7 +90,10 @@
   100%
     opacity: 0
 
-// Description Media Queries
+// Title Media Queries
 @media screen and (max-width: 800px)
-  #description
-    margin: 45% 0 0 0
+  #logo
+    margin: none
+    text-align: center
+  #wrapper
+    padding: 7px
