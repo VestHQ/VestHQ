@@ -2,7 +2,7 @@
   // height here cuts the top of bottom image if screen squeezed
   // which is okay but do media if short screen height then do white text
   height: 30vh;
-
+  background-color: rgba(255, 255, 255, .5);
 
   &__text-box {
     // reference to position: relative; in nav-box in title.scss

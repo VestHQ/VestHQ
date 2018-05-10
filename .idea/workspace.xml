@@ -6,16 +6,16 @@
       <change beforePath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/cards.scssc" afterPath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/cards.scssc" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/footer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/footer.scssc" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/grid.scssc" afterPath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/grid.scssc" />
-      <change beforePath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/1-base-dir.scssc" afterPath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/1-base-dir.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/heading.scssc" afterPath="$PROJECT_DIR$/.sass-cache/639b49a29871341e5e895a8f927aa31cc9124cee/heading.scssc" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/base.scssc" />
       <change beforePath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/variables.scssc" afterPath="$PROJECT_DIR$/.sass-cache/963586b0ba41f8994239555162e006823a7981a6/variables.scssc" />
       <change beforePath="$PROJECT_DIR$/_includes/cards.html" afterPath="$PROJECT_DIR$/_includes/cards.html" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change beforePath="$PROJECT_DIR$/_sass/1-base/1-base-dir.scss" afterPath="$PROJECT_DIR$/_sass/1-base/1-base-dir.scss" />
+      <change beforePath="$PROJECT_DIR$/_sass/1-base/base.scss" afterPath="$PROJECT_DIR$/_sass/1-base/base.scss" />
       <change beforePath="$PROJECT_DIR$/_sass/1-base/variables.scss" afterPath="$PROJECT_DIR$/_sass/1-base/variables.scss" />
       <change beforePath="$PROJECT_DIR$/_sass/3-layout/cards.scss" afterPath="$PROJECT_DIR$/_sass/3-layout/cards.scss" />
       <change beforePath="$PROJECT_DIR$/_sass/3-layout/footer.scss" afterPath="$PROJECT_DIR$/_sass/3-layout/footer.scss" />
       <change beforePath="$PROJECT_DIR$/_sass/3-layout/grid.scss" afterPath="$PROJECT_DIR$/_sass/3-layout/grid.scss" />
+      <change beforePath="$PROJECT_DIR$/_sass/3-layout/heading.scss" afterPath="$PROJECT_DIR$/_sass/3-layout/heading.scss" />
       <change beforePath="$PROJECT_DIR$/_site/assets/css/main.css" afterPath="$PROJECT_DIR$/_site/assets/css/main.css" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
     </list>
@@ -34,18 +34,48 @@
       <file leaf-file-name="grid.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/3-layout/grid.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="450">
+              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cards.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cards.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/3-layout/cards.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+            <state relative-caret-position="702">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heading.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/3-layout/heading.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/cards.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -65,27 +95,7 @@
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cards.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/cards.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/1-base/variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -121,18 +131,18 @@
         <option value="$PROJECT_DIR$/_sass/1-base/mixins.scss" />
         <option value="$PROJECT_DIR$/_includes/title.html" />
         <option value="$PROJECT_DIR$/_sass/3-layout/title.scss" />
-        <option value="$PROJECT_DIR$/_sass/1-base/base.scss" />
         <option value="$PROJECT_DIR$/_sass/3-layout/3-layout-dir.scss" />
         <option value="$PROJECT_DIR$/_sass/3-layout/containers.scss" />
-        <option value="$PROJECT_DIR$/_sass/3-layout/heading.scss" />
         <option value="$PROJECT_DIR$/_sass/1-base/1-base-dir.scss" />
         <option value="$PROJECT_DIR$/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/_sass/3-layout/cards.scss" />
+        <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/_includes/cards.html" />
         <option value="$PROJECT_DIR$/_sass/1-base/variables.scss" />
         <option value="$PROJECT_DIR$/_sass/3-layout/grid.scss" />
         <option value="$PROJECT_DIR$/_sass/3-layout/footer.scss" />
-        <option value="$PROJECT_DIR$/_includes/cards.html" />
-        <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/_sass/3-layout/heading.scss" />
+        <option value="$PROJECT_DIR$/_sass/1-base/base.scss" />
+        <option value="$PROJECT_DIR$/_sass/3-layout/cards.scss" />
       </list>
     </option>
   </component>
@@ -150,8 +160,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1267" />
-    <option name="y" value="488" />
+    <option name="x" value="1258" />
+    <option name="y" value="42" />
     <option name="width" value="1293" />
     <option name="height" value="1371" />
   </component>
@@ -348,15 +358,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525809671389</updated>
-      <workItem from="1525809673773" duration="38746000" />
+      <workItem from="1525809673773" duration="43453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38746000" />
+    <option name="totallyTimeSpent" value="43453000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1267" y="488" width="1293" height="1371" extended-state="0" />
+    <frame x="1258" y="42" width="1293" height="1371" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -577,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/3-layout/heading.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/1-base/type.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -633,26 +635,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/1-base/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/3-layout/grid.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="450">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -660,7 +654,15 @@
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/cards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -673,18 +675,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/3-layout/cards.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/1-base/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+        <state relative-caret-position="306">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/cards.html">
+    <entry file="file://$PROJECT_DIR$/_sass/3-layout/heading.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="558">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/3-layout/cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="41" />
           <folding />
         </state>
       </provider>
