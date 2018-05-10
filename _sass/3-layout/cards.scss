@@ -1,0 +1,55 @@
+.card {
+  font-family: $avenir;
+  width: 35rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(black, .15);
+  border-top: 1rem solid $card-border-color;
+
+
+
+  &__icon {
+    width: 20rem;
+    margin: 5rem auto;
+    display: inline-block;
+    transition: all .2s;
+  }
+
+  // center text in box!
+
+  &__mid {
+    background-color: $card-mid-color;
+    color: $title-text-color;
+    height: 20rem;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__bottom {
+    height: 5rem;
+    text-decoration: none;
+    font-size: 1.8rem;
+    background-color: $card-border-color;
+    //background-size: cover;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    //padding-left: 40%;
+  }
+
+  //.card__heading {
+  //
+  //  &--text {
+  //    color: $title-text-color;
+  //    font-weight: bold;
+  //    line-height: 22rem;
+  //  }
+  //}
+}

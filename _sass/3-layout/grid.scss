@@ -1,0 +1,26 @@
+.row{
+  //1140px is a standard - so divide by 10 and use rem
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child){
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+
+  //select all elements by attribute with []
+  // ^ START with 'col-' // * is for all that contain "class-part-of-name" // $ is for all that ends with "class-name"
+  [class^="col-"]{
+    float: left;
+
+    &:not(:last-child){
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2{
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+}
