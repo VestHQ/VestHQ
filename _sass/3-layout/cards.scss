@@ -1,13 +1,14 @@
 .card {
   font-family: $avenir;
-  width: 35rem;
+  width: 32rem;
   background-color: #fff;
   font-size: 1.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   border-top: 1rem solid $card-border-color;
-
+  margin: 0 auto;
+  margin-bottom: -25rem;
 
 
   &__icon {
@@ -38,10 +39,8 @@
     background-color: $card-border-color;
     //background-size: cover;
     color: #fff;
-
     display: flex;
     align-items: center;
-    //padding-left: 40%;
   }
 
   //.card__heading {
