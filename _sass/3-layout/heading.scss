@@ -8,6 +8,16 @@
   & > * {
     width: 50%;
     margin-left: 25%;
+
+    @include respond(tab-port) {
+      width: 75%;
+      margin-left: 16%;
+    }
+
+    @include respond(phone) {
+      width: 82%;
+      margin-left: 6%;
+    }
   }
 
   &__text-box {
@@ -27,9 +37,11 @@
 
     @include respond(tab-port) {
       font-size: 5rem;
+      width: 80%;
     }
     @include respond(phone) {
       font-size: 4rem;
+      width: 80%;
     }
 
   }
@@ -42,6 +54,10 @@
     text-align: center;
   }
 
+  &__input-box {
+    width: 100%;
+  }
+
   &__input {
     width: 30rem;
     //padding: 1.5rem 2rem;
@@ -52,6 +68,18 @@
     border-radius: .3rem;
     border-color: #979797;
     border-style: solid;
+
+
+
+    @include respond(phone){
+      width: 20rem;
+      //margin: 2rem auto;
+    }
+
+    @include respond(tab-port){
+      width: 20rem;
+      //margin-right: 2rem;
+    }
   }
 
   &__btn {
@@ -63,6 +91,11 @@
     font-family: $avenir;
     height: 5rem;
     width: 15rem;
+
+    @include respond(phone){
+      width: 20rem;
+      margin: 0 auto;
+    }
 
     &:hover {
       background-color: $title-text-color;

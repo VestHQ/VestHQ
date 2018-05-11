@@ -8,9 +8,7 @@
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   border-top: 1rem solid $card-border-color;
   //margin: 0 auto;
-  margin: 3rem auto -35rem auto;
-
-
+  margin: 3rem auto 1rem auto;
 
   &__icon {
     width: 20rem;
@@ -55,12 +53,7 @@
     }
   }
 
-  //.card__heading {
-  //
-  //  &--text {
-  //    color: $title-text-color;
-  //    font-weight: bold;
-  //    line-height: 22rem;
-  //  }
+  //@include respond(tab-port){
+  //  margin-bottom: 1rem;
   //}
 }
