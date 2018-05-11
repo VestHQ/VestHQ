@@ -20,10 +20,10 @@ html {
     font-size: 75%;
   }
 
-  @media screen and (min-width 114rem){
-    margin: 0 5rem;
-    padding: 30rem;
-  }
+  //@media screen and (min-width 114rem){
+  //  margin: 0 5rem;
+  //  padding: 30rem;
+  //}
 }
 
 body{
@@ -32,13 +32,21 @@ body{
   font-family: $avenir;
   background-color: #fff;
   width: 100%;
-  max-width: 120rem;
-
+  max-width: 144rem;
   //@media screen and (max-width: 111rem){
   // padding: 0;
   //}
 }
 
-@media screen and (max-width: 120rem) {
+@media screen and (min-width: 144rem) {
+  body {
     margin: 0 auto;
+  }
 }
+@media screen and (max-width: 144rem) {
+  body {
+    margin: 0 auto;
+  }
+
+}
+
