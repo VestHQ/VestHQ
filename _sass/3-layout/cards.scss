@@ -7,7 +7,6 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   border-top: 1rem solid $card-border-color;
-  //margin: 0 auto;
   margin: 3rem auto 1rem auto;
 
   &__icon {
@@ -21,8 +20,6 @@
       margin: 2rem auto;
     }
   }
-
-  // center text in box!
 
   &__mid {
     background-color: $card-mid-color;
@@ -59,14 +56,11 @@
         background-color: $card-hover-color;
       }
     }
-
-    //@include respond(phone){
-    //  height: 3rem;
-    //}
+    
   }
 
   @include respond(tab-port) {
-    width: 28rem;
+    width: 26rem;
   }
 
   @include respond(phone){

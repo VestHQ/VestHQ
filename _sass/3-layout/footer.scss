@@ -1,10 +1,18 @@
 .main {
   background-image: url("../../assets/images/footer.png");
   height: 65vh;
-  //margin: 0 auto;
   background-size: cover;
   background-position: bottom;
   position: relative;
-  //margin-bottom: -25rem;
-  //margin-top: 5rem;
+
+  // sticky footer test
+  //flex-shrink: 0;
+
+  @include respond(tab-port){
+    background-image: url("../../assets/images/footer_mobile.png");
+  }
+
+  @include respond(phone){
+    background-image: url("../../assets/images/footer_mobile.png");;
+  }
 }

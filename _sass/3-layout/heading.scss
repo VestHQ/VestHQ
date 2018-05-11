@@ -3,7 +3,13 @@
   margin: 7rem auto;
   position: relative;
   color: $title-text-color;
-  //background-color: rgba(255, 255, 255, .5);
+
+  // sticky footer test
+  //flex: 1 0 auto;
+
+  @include respond(tab-port) {
+    margin: 5rem auto;
+  }
 
   & > * {
     width: 50%;

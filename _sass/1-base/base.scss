@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: inherit;
 }
+//html, body {
+//  width: 100%;
+//}
 
 html {
   font-size: 62.5%;
@@ -28,14 +31,13 @@ html {
 
 body{
   box-sizing: border-box;
-  //padding: 1.5rem;
   font-family: $avenir;
   background-color: #fff;
-  width: 100%;
   max-width: 144rem;
-  //@media screen and (max-width: 111rem){
-  // padding: 0;
-  //}
+
+  // sticky footer test
+  //display: flex;
+  //flex-direction: column;
 }
 
 @media screen and (min-width: 144rem) {
@@ -43,10 +45,10 @@ body{
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 144rem) {
+@media screen and (max-width: 145rem) {
   body {
     margin: 0 auto;
   }
 
 }
-
+// 1800 - 1830px screen width body has extra padding on sides and scroll on bottom appears
