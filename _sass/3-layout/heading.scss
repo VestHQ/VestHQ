@@ -73,7 +73,7 @@
 
     @include respond(phone){
       width: 20rem;
-      //margin: 2rem auto;
+      margin: 0 auto 1rem auto;
     }
 
     @include respond(tab-port){

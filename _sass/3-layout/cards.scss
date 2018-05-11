@@ -15,6 +15,11 @@
     margin: 5rem auto;
     display: inline-block;
     transition: all .2s;
+
+    @include respond(phone){
+      width: 15rem;
+      margin: 2rem auto;
+    }
   }
 
   // center text in box!
@@ -29,6 +34,9 @@
     display: flex;
     align-items: center;
 
+    @include respond(phone){
+      height: 12rem;
+    }
   }
 
   &__bottom {
@@ -51,9 +59,17 @@
         background-color: $card-hover-color;
       }
     }
+
+    //@include respond(phone){
+    //  height: 3rem;
+    //}
   }
 
-  //@include respond(tab-port){
-  //  margin-bottom: 1rem;
-  //}
+  @include respond(tab-port) {
+    width: 28rem;
+  }
+
+  @include respond(phone){
+    width: 25rem;
+  }
 }
