@@ -1,11 +1,10 @@
 .header {
   //height: 30vh;
   margin: 7rem auto;
-  position: relative;
+  //position: relative;
   color: $title-text-color;
+  grid-row: 2;
 
-  // sticky footer test
-  //flex: 1 0 auto;
 
   @include respond(tab-port) {
     margin: 5rem auto;

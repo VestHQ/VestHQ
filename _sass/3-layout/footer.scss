@@ -4,15 +4,15 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
+  grid-row: 4;
+  //grid-column: 4 / -1;
 
-  // sticky footer test
-  //flex-shrink: 0;
 
   @include respond(tab-port){
     background-image: url("../../assets/images/footer_mobile.png");
   }
 
   @include respond(phone){
-    background-image: url("../../assets/images/footer_mobile.png");;
+    background-image: url("../../assets/images/footer_mobile.png");
   }
 }

@@ -3,11 +3,10 @@
   max-width: $grid-width;
   margin: 0 auto;
 
-  flex: 1 0 auto;
-
 
   @include respond(tab-port) {
-    display: flex;
+    //display: flex;
+    // taking this out placed cards underneath each other
   }
 
 
@@ -39,6 +38,10 @@
 
   .col-1-of-2{
     width: calc((100% - #{$gutter-horizontal}) / 2);
+
+    @include respond(phone) {
+      width: calc((50% - #{$gutter-horizontal}) / 2);
+    }
   }
 
 }
