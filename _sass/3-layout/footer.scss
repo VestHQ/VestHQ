@@ -5,11 +5,12 @@
   background-position: bottom;
   position: relative;
   grid-row: 4;
-  grid-column: 1 / -1;
+  //grid-column: 1 / -1;
+  grid-column: 1 / span 5;
 
 
   @include respond(tab-port){
-    background-image: url("../../assets/images/footer_mobile.png");
+    //background-image: url("../../assets/images/footer_mobile.png");
   }
 
   @include respond(phone){
