@@ -8,14 +8,22 @@
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   border-top: 1rem solid $card-border-color;
   margin: 3rem auto 1rem auto;
-  grid-row: 3;
+  //grid-template-rows: 10rem;
+
+  //z-index: 2;
 
   &--1 {
+    //grid-row-start: 4;
+    //position: relative;
+    //left: -30vw;
+    //top: -5vh;
 
   }
 
   &--2 {
-
+    //position: relative;
+    //left: 5vw;
+    //top: -45.5vh;
   }
 
 

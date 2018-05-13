@@ -22,11 +22,6 @@ html {
   @include respond(big-desktop) {
     font-size: 75%;
   }
-
-  //@media screen and (min-width 114rem){
-  //  margin: 0 5rem;
-  //  padding: 30rem;
-  //}
 }
 
 body{
@@ -35,9 +30,6 @@ body{
   background-color: #fff;
   max-width: 144rem;
 
-  // sticky footer test
-  //display: flex;
-  //flex-direction: column;
 }
 
 @media screen and (min-width: 144rem) {
@@ -56,6 +48,17 @@ body{
 
 .body-container {
   display: grid;
+  //grid-template-areas:
+  //        "title"
+  //        "header1"
+  //        "header2"
+  //        "form"
+  //        "card1 card2"
+  //        "footer";
+  max-width: 144rem;
+  margin: 0 auto;
+  //grid-template-rows: 150px auto;
+  grid-template-columns: 1fr;
 }
 
 

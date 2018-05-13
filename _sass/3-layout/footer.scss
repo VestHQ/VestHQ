@@ -1,12 +1,11 @@
-.main {
+.footer {
   background-image: url("../../assets/images/footer.png");
   height: 65vh;
   background-size: cover;
   background-position: bottom;
-  position: relative;
-  grid-row: 4;
+  grid-row: 3 / 5;
+  grid-column: 1;
   //grid-column: 1 / -1;
-  grid-column: 1 / span 5;
 
 
   //@include respond(tab-port){
