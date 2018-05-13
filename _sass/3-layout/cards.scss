@@ -69,11 +69,13 @@
 
   }
 
+  @include respond(tab-land) {
+    width: 30rem;
+  }
+
   @include respond(tab-port) {
     width: 28rem;
   }
-
-
 
   @include respond(phone) {
     width: 25rem;

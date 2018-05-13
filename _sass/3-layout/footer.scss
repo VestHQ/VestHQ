@@ -9,9 +9,9 @@
   grid-column: 1 / span 5;
 
 
-  @include respond(tab-port){
-    //background-image: url("../../assets/images/footer_mobile.png");
-  }
+  //@include respond(tab-port){
+  //  //background-image: url("../../assets/images/footer_mobile.png");
+  //}
 
   @include respond(phone){
     background-image: url("../../assets/images/footer_mobile.png");

@@ -1,14 +1,7 @@
 .row{
-  //1140px is a standard - so divide by 10 and use rem
+  ////1140px is a standard - so divide by 10 and use rem
   max-width: $grid-width;
   margin: 0 auto;
-
-
-  @include respond(tab-port) {
-    //display: flex;
-    // taking this out placed cards underneath each other
-  }
-
 
   &:not(:last-child){
     margin-bottom: $gutter-vertical;
