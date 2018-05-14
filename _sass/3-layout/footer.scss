@@ -1,16 +1,22 @@
 .footer {
   background-image: url("../../assets/images/footer.png");
-  height: 65vh;
+  //background-color: red;
+  //min-height: 65vh;
+  //max-height: 100vh;
   background-size: cover;
   background-position: bottom;
-  grid-row: 3 / 5;
-  grid-column: 1;
+
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+  //justify-items: stretch;
+
+
   //grid-column: 1 / -1;
 
 
-  //@include respond(tab-port){
-  //  //background-image: url("../../assets/images/footer_mobile.png");
-  //}
+  @include respond(tab-port){
+    //background-image: url("../../assets/images/footer_mobile.png");
+  }
 
   @include respond(phone){
     background-image: url("../../assets/images/footer_mobile.png");
