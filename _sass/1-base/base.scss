@@ -24,9 +24,8 @@ html {
 body{
   box-sizing: border-box;
   font-family: $avenir;
-  background-color: #fff;
   max-width: 144rem;
-
+  background-color: #fff;
   //background-color: orange;
 
 }
@@ -43,16 +42,13 @@ body{
 
 }
 
-
-
 .body-container {
   display: grid;
-  min-width: 100%;
-  min-height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 6rem 30% .5fr 1fr;
+  grid-template-rows: 6rem auto 2fr 1fr;
   overflow: hidden;
-
+  align-content: stretch;
+  //
   //background-color: #00b0f0;
 }
 

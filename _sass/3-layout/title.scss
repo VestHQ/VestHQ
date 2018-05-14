@@ -17,5 +17,9 @@
     justify-content: flex-end;
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
+
+    @include respond(small-phone) {
+      justify-content: space-between;
+    }
   }
 }

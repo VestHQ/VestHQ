@@ -9,15 +9,24 @@
   border-top: 1rem solid $card-border-color;
   margin: 3rem auto -5px auto;
 
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+  z-index: 1;
+
 
   &--1 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
+
   }
 
   &--2 {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
+
+    @include respond(card-break) {
+      //grid-row: 4 / 5;
+    }
   }
 
 
@@ -27,10 +36,10 @@
     display: inline-block;
     transition: all .2s;
 
-    //@include respond(phone) {
-    //  width: 15rem;
-    //  margin: 2rem auto;
-    //}
+    @include respond(phone) {
+      width: 15rem;
+      margin: 2rem auto;
+    }
   }
 
   &__mid {
@@ -39,14 +48,14 @@
     height: 20rem;
     font-size: 1.8rem;
     line-height: 1.7;
-    padding: 0 8rem;
+    padding: 0 4rem;
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none !important;
 
-    //@include respond(phone) {
-    //  height: 12rem;
-    //}
+    @include respond(phone) {
+      height: 12rem;
+    }
   }
 
   &__bottom {
@@ -76,10 +85,15 @@
   }
 
   @include respond(tab-port) {
-    width: 28rem;
+    width: 27rem;
   }
 
   @include respond(phone) {
-    width: 25rem;
+    width: 22rem;
   }
+
+  @include respond(small-phone) {
+    width: 20rem;
+  }
+
 }

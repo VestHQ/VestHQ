@@ -13,8 +13,14 @@
   @if $breakpoint == mid-phone {
     @media (max-width: 31.25em) { @content } //500px
   }
+  @if $breakpoint == card-break {
+    @media (max-width: 33.75em) { @content } //540px
+  }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content } //600px
+  }
+  @if $breakpoint == large-phone {
+    @media (max-width: 43.125em) { @content } //690px
   }
   @if $breakpoint == tab-port {
     @media (max-width: 56em) { @content } //900px
