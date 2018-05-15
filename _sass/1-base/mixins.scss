@@ -13,9 +13,6 @@
   @if $breakpoint == mid-phone {
     @media (max-width: 31.25em) { @content } //500px
   }
-  @if $breakpoint == card-break {
-    @media (max-width: 33.75em) { @content } //540px
-  }
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content } //600px
   }

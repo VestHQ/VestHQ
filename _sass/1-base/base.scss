@@ -44,12 +44,14 @@ body{
 
 .body-container {
   display: grid;
+  //height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem auto 2fr 1fr;
-  overflow: hidden;
+  grid-gap: 15px 10px;
   align-content: stretch;
-  //
-  //background-color: #00b0f0;
+
+
+
 }
 
 

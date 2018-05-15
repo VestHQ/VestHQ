@@ -1,5 +1,5 @@
 .header {
-  margin: 7rem auto;
+  margin: 3rem auto;
   color: $title-text-color;
 
   grid-row: 2 / span 1;
@@ -8,7 +8,7 @@
 
 
   @include respond(tab-port) {
-    margin: 5rem auto;
+    margin: 0 auto;
   }
 
   & > * {

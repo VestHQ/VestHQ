@@ -1,3 +1,15 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  background-image: url("../../assets/images/footer.png");
+  background-size: cover;
+  background-position: bottom;
+  min-height: 50vh;
+  max-height: 70vh;
+}
+
 .card {
   font-family: $avenir;
   width: 32rem;
@@ -7,29 +19,9 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
   border-top: 1rem solid $card-border-color;
-  margin: 3rem auto -5px auto;
-
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 2;
+  margin: 1rem auto;
   z-index: 1;
-
-
-  &--1 {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-
-  }
-
-  &--2 {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-
-    @include respond(card-break) {
-      //grid-row: 4 / 5;
-    }
-  }
-
-
+  
   &__icon {
     width: 20rem;
     margin: 5rem auto;
@@ -42,7 +34,7 @@
     }
   }
 
-  &__mid {
+  &__mid{
     background-color: $card-mid-color;
     color: $title-text-color;
     height: 20rem;
@@ -51,7 +43,6 @@
     padding: 0 4rem;
     display: flex;
     align-items: center;
-    text-decoration: none !important;
 
     @include respond(phone) {
       height: 12rem;
@@ -60,7 +51,7 @@
 
   &__bottom {
     height: 5rem;
-
+    border-radius: 3px;
     font-size: 1.8rem;
     background-color: $card-border-color;
 
@@ -89,11 +80,14 @@
   }
 
   @include respond(phone) {
-    width: 22rem;
+    width: 24rem;
   }
 
   @include respond(small-phone) {
     width: 20rem;
   }
 
+}
+.card a:link, a:visited {
+  text-decoration: none;
 }
