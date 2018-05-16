@@ -1,5 +1,5 @@
 .header {
-  margin: 3rem auto;
+  margin: 2.5rem auto;
   color: $title-text-color;
 
   grid-row: 2 / span 1;
@@ -37,17 +37,17 @@
   &__primary {
     font-family: $avenir;
     display: inline-block;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     text-shadow: 2px 1px 1px $title-text-color;
     font-weight: 900;
     margin-bottom: 2.6rem;
 
     @include respond(tab-port) {
-      font-size: 5rem;
+      font-size: 4rem;
       width: 80%;
     }
     @include respond(phone) {
-      font-size: 4rem;
+      font-size: 3rem;
       width: 80%;
     }
 
@@ -55,9 +55,13 @@
 
   &__secondary {
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 2.6rem;
     text-align: center;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   &__input-box {
@@ -73,6 +77,7 @@
     border-radius: .3rem;
     border-color: #979797;
     border-style: solid;
+    text-align: center;
 
 
     @include respond(tab-port){
@@ -89,7 +94,7 @@
   &__btn {
     margin-left: 3.6rem;
     font-size: 2rem;
-    border-radius: .3rem;
+    border-radius: 3px;
     background-color: #0453AE;
     color: white;
     font-family: $avenir;
@@ -97,7 +102,6 @@
     width: 15rem;
 
     @include respond(small-phone){
-      width: 12rem;
       margin-left: 2rem;
     }
 

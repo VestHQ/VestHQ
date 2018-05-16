@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  width: 100%;
+  min-height: 100%;
 
   @include respond(tab-land) {  // width < 1200?
     font-size: 56.25%;
@@ -24,34 +26,19 @@ html {
 body{
   box-sizing: border-box;
   font-family: $avenir;
-  max-width: 144rem;
+  max-width: 114rem;
   background-color: #fff;
-  //background-color: orange;
+  margin: 0 auto;
 
 }
 
-@media screen and (min-width: 144rem) {
-  body {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 145rem) {
-  body {
-    margin: 0 auto;
-  }
-
-}
-
-.body-container {
+.grid-container {
   display: grid;
   //height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem auto 2fr 1fr;
   grid-gap: 15px 10px;
   align-content: stretch;
-
-
-
 }
 
 

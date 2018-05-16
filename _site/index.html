@@ -2,7 +2,7 @@
 <html>
   <head>
     <!-- Meta Matter-->
-<title>manifest</title>
+<title>VestHQ</title>
 <meta name="description" content="A fintech lab.">
 <meta name="keywords" content="fintech, news, media">
 <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.png" />
@@ -17,9 +17,10 @@
 
   </head>
   <body>
-    <div class="body-container">
+    <div class="grid-container">
           <img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav nav__logo">
     <a class="nav nav__contact">contact us</a>
+    <div class="shadow-line"></div>
 
       <header class="header">
     <div class="header__text-box">
@@ -27,15 +28,26 @@
         <h2 class="header__secondary">We combined cutting-edge behavioral economics
                 with smart portfolio management for plans that are designed to empower.</h2>
 
-        <div class="header__input-box">
-            <input class="header__input" title="signup">
-            <button class="header__btn">Sign me up!</button>
-        </div>
+        <form name="contact" class="header__input-box">
+            <input class="header__input" name="email" type="email" required>
+            <button class="header__btn" type="submit">Sign me up!</button>
+        </form>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec"
+            const form = document.forms['contact']
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+            })
+        </script>
     </div>
 </header>
 
     </div>
-      <div class="card-container">
+    <div class="card-container">
+      
 
     <div class="card card--1">
         <a href="#" >
@@ -64,11 +76,13 @@
             </button>
         </a>
     </div>
-</div>
 
 
 
-      <footer class="footer">
+
+    </div>
+    <footer class="footer">
+
 </footer>
 
     <!-- Google Analytics -->

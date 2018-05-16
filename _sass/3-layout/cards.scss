@@ -2,17 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
   background-image: url("../../assets/images/footer.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   min-height: 50vh;
   max-height: 70vh;
+
+  //position: fixed;
+  //width: 100%;
+  //left: 0;
+  //bottom: 0;
+
+  @include respond(phone) {
+    background-image: url("../../assets/images/footer_mobile.png");
+  }
 }
 
 .card {
   font-family: $avenir;
-  width: 32rem;
+  width: 28rem;
   background-color: $card-background-color;
   font-size: 1.5rem;
   text-align: center;
@@ -21,24 +31,26 @@
   border-top: 1rem solid $card-border-color;
   margin: 1rem auto;
   z-index: 1;
-  
+
+  justify-content: center;
+
   &__icon {
-    width: 20rem;
-    margin: 5rem auto;
+    width: 15rem;
+    margin: 3.5rem auto;
     display: inline-block;
     transition: all .2s;
 
     @include respond(phone) {
-      width: 15rem;
-      margin: 2rem auto;
+      width: 10rem;
+      margin: 1.5rem auto;
     }
   }
 
   &__mid{
     background-color: $card-mid-color;
     color: $title-text-color;
-    height: 20rem;
-    font-size: 1.8rem;
+    height: 15rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     padding: 0 4rem;
     display: flex;
