@@ -32,6 +32,17 @@ body{
 
 }
 
+//@media screen and (min-width: 144rem) {
+//  body {
+//    margin: 0 auto;
+//  }
+//}
+//@media screen and (max-width: 145rem) {
+//  body {
+//    margin: 0 auto;
+//  }
+//}
+
 .grid-container {
   display: grid;
   //height: 100vh;
@@ -39,6 +50,7 @@ body{
   grid-template-rows: 6rem auto 2fr 1fr;
   grid-gap: 15px 10px;
   align-content: stretch;
+
 }
 
 

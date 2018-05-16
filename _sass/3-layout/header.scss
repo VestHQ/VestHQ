@@ -1,6 +1,7 @@
 .header {
   margin: 2.5rem auto;
   color: $title-text-color;
+  z-index: 1;
 
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
@@ -37,13 +38,13 @@
   &__primary {
     font-family: $avenir;
     display: inline-block;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-shadow: 2px 1px 1px $title-text-color;
     font-weight: 900;
     margin-bottom: 2.6rem;
 
     @include respond(tab-port) {
-      font-size: 4rem;
+      font-size: 3.5rem;
       width: 80%;
     }
     @include respond(phone) {
