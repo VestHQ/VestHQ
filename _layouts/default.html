@@ -4,11 +4,15 @@
     {% include meta.html %}
   </head>
   <body>
-    <div id="wrapper">
+    <div class="grid-container">
       {% include title.html %}
-      {% include features.html %}
-      {% include social.html %}
+      {% include header.html %}
     </div>
+    <div class="card-container">
+      {% include cards.html %}
+    </div>
+    {% include footer.html %}
+
     {% include scripts.html %}
   </body>
 </html>
