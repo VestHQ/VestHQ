@@ -4,13 +4,17 @@
   background-position: bottom;
   min-height: 100vh;
 
-  position: absolute;
+  position: fixed;
   max-width: 130rem;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
 
+  //@include respond(ipad) {
+  //  background-image: url("../../assets/images/footer_mobile.png");
+  //  max-height: 60vh;
+  //}
 
   @include respond(phone) {
     background-image: url("../../assets/images/footer_mobile.png");
