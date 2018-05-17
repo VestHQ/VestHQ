@@ -1,17 +1,11 @@
 .footer {
-  //display: flex;
-  //flex-wrap: wrap;
-  //align-items: center;
-  //justify-content: center;
-
   background-image: url("../../assets/images/footer.png");
   background-size: cover;
   background-position: bottom;
   min-height: 100vh;
 
   position: absolute;
-  width: 100vw;
-  //max-width: 130rem;
+  max-width: 130rem;
   left: 0;
   right: 0;
   bottom: 0;
