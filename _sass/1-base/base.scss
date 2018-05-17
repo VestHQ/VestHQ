@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  min-height: 100vh;
+
+  @include respond(tab-land) {  // width < 1200?
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) { // width < 900?
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body{
+  box-sizing: border-box;
+  font-family: $avenir;
+  max-width: 130rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+//@media screen and (max-width: 114rem) {
+//  body {
+//    margin: auto;
+//  }
+//}
+//@media screen and (max-width: 145rem) {
+//  body {
+//    margin: 0 auto;
+//  }
+//}
+
+.grid-container {
+  display: grid;
+  //height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem auto 2fr 1fr;
+  grid-gap: 10px;
+  align-content: stretch;
+
+}
+
+
+
+
+
+
+
