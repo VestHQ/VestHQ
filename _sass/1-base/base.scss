@@ -5,12 +5,11 @@
   padding: 0;
   box-sizing: inherit;
 }
-//html, body {
-//  width: 100%;
-//}
 
 html {
   font-size: 62.5%;
+  width: 100%;
+  min-height: 100vh;
 
   @include respond(tab-land) {  // width < 1200?
     font-size: 56.25%;
@@ -22,40 +21,35 @@ html {
   @include respond(big-desktop) {
     font-size: 75%;
   }
-
-  //@media screen and (min-width 114rem){
-  //  margin: 0 5rem;
-  //  padding: 30rem;
-  //}
 }
 
 body{
   box-sizing: border-box;
   font-family: $avenir;
+  max-width: 130rem;
   background-color: #fff;
-  max-width: 144rem;
-
-  // sticky footer test
-  //display: flex;
-  //flex-direction: column;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 144rem) {
-  body {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 145rem) {
-  body {
-    margin: 0 auto;
-  }
+//@media screen and (max-width: 114rem) {
+//  body {
+//    margin: auto;
+//  }
+//}
+//@media screen and (max-width: 145rem) {
+//  body {
+//    margin: 0 auto;
+//  }
+//}
 
-}
-// 1800 - 1830px screen width body has extra padding on sides and scroll on bottom appears
-
-
-.body-container {
+.grid-container {
   display: grid;
+  //height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem auto 2fr 1fr;
+  grid-gap: 10px;
+  align-content: stretch;
+
 }
 
 

@@ -16,8 +16,14 @@
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content } //600px
   }
+  @if $breakpoint == large-phone {
+    @media (max-width: 43.125em) { @content } //690px
+  }
   @if $breakpoint == tab-port {
     @media (max-width: 56em) { @content } //900px
+  }
+  @if $breakpoint == laptop {
+    @media (max-width: 63.75em) { @content } //1020px
   }
   @if $breakpoint == tab-land {
     @media (max-width: 75em) { @content } //1200px

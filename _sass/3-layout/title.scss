@@ -1,32 +1,30 @@
-.nav-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  bottom: 15rem;
-  grid-row: 1;
-}
-
 .nav{
-  position: relative;
+  margin: 3rem 2rem;
+  display: flex;
 
   &__logo {
-    width: 9rem;
+    width: 7rem;
+
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+
   }
 
   &__contact {
-    float: right;
-    //margin-left: 90%;
     color: $title-text-color;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-right: 5rem;
 
-    @include respond(tab-port){
-      margin-right: 5rem;
-    }
-
-    @include respond(small-phone){
-      margin-right: 6rem;
-    }
+    justify-content: flex-end;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
   }
+
+
+}
+
+.shadow-line {
+    @include respond(phone) {
+      box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .15);
+    }
 }

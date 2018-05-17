@@ -5,7 +5,7 @@
 <title>VestHQ</title>
 <meta name="description" content="A fintech lab.">
 <meta name="keywords" content="fintech, news, media">
-<link rel="shortcut icon" type="image/ico" href="/assets/img/favicon.png" />
+<link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.png" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -17,101 +17,79 @@
 
   </head>
   <body>
-    <div class="body-container">
-      <!-- title -->
-<!--<div class="title">-->
-    <div class="nav nav-box">
-        <!--<span class="nav__logo">Vest</span><span class="nav__logo&#45;&#45;sub">HQ</span>-->
-        <img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
-        <a class="nav__contact">contact us</a>
-    </div>
-<!--</div>-->
+    <div class="grid-container">
+          <img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav nav__logo">
+    <a class="nav nav__contact">contact us</a>
+    <div class="shadow-line"></div>
 
-
-
-
-
-
-
-<!--<div id="tagline">-->
-  <!--<article class="rw-wrapper">-->
-    <!--<h2 class="rw-sentence">-->
-      <!--<span>  Vest started by eliminating 50+ areas of waste in 401(k) and Roth plans.-->
-      <!--<br>-->
-      <!--Then we combined cutting-edge behavioral economics with smart portfolio management for plans that are designed to</span>-->
-    	<!--<div class="rw-words rw-words-1">-->
-    		<!--<span>empower.</span>-->
-    		<!--<span>excite.</span>-->
-    		<!--<span>scale.</span>-->
-    		<!--<span>educate.</span>-->
-    		<!--<span>use.</span>-->
-    		<!--<span>enjoy.</span>-->
-    	<!--</div>-->
-      <!--&lt;!&ndash; <br> &ndash;&gt;-->
-      <!--&lt;!&ndash; <span>Put us to work!</span> &ndash;&gt;-->
-    <!--</h2>-->
-  <!--</article>-->
-<!--</div>-->
-
-      
-<header class="header">
-
+      <header class="header">
     <div class="header__text-box">
         <h1 class="header__primary">Retirement is now Accessible</h1>
         <h2 class="header__secondary">We combined cutting-edge behavioral economics
                 with smart portfolio management for plans that are designed to empower.</h2>
 
-        <div class="header__input-box">
-            <input class="header__input" title="signup">
-            <button class="header__btn">Sign me up!</button>
-        </div>
+        <form name="contact" class="header__input-box">
+            <input class="header__input" name="email" type="email" required>
+            <button id="btn" class="header__btn" type="submit" onclick="toggleText()">Sign me up!</button>
+        </form>
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec";
+            const form = document.forms['contact'];
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+            });
 
+            let toggleText = () => {
+                let button = document.getElementById("btn");
+                button.innerHTML= "Thanks!"
+            }
+        </script>
     </div>
 </header>
-      <section class="main">
 
-    <div class="row">
-        <div class="col-1-of-2">
-            <a href="#" >
-                <div class="card card--1">
-                    <h1 class="card__heading">
-                        <img src="../assets/images/logo_boat_text.png" alt="Harbor" class="card__icon">
-                    </h1>
-                    <h2 class="card__mid">
-                        Full-service 401(k) for small companies
-                    </h2>
-                    <button class="card__bottom">
-                        <p class="card__bottom--link">Learn more</p>
-                    </button>
-                </div>
-            </a>
-        </div>
+    </div>
+    <div class="card-container">
+      
 
-        <div class="col-1-of-2">
-            <a href="#" >
-                <div class="card card--2">
-                    <h1 class="card__heading">
-                        <img src="../assets/images/logo_anchor_text.png" alt="Anchor" class="card__icon">
-                    </h1>
-                    <h2 class="card__mid">
-                        Demystifying fiduciary responsibilities
-                    </h2>
-
-                    <button class="card__bottom">
-                        <p class="card__bottom--link">Learn more</p>
-                    </button>
-                </div>
-            </a>
-        </div>
+    <div class="card card--1">
+        <a href="#" >
+            <h1 class="card__heading">
+                <img src="../assets/images/logo_boat_text.png" alt="Harbor" class="card__icon">
+            </h1>
+            <h2 class="card__mid">
+                Full-service 401(k) for small companies
+            </h2>
+            <button class="card__bottom">
+                <a class="card__bottom--link">Learn more</a>
+            </button>
+        </a>
     </div>
 
-</section>
+    <div class="card card--2">
+        <a href="#" >
+            <h1 class="card__heading">
+                <img src="../assets/images/logo_anchor_text.png" alt="Anchor" class="card__icon">
+            </h1>
+            <h2 class="card__mid">
+                Demystifying fiduciary responsibilities
+            </h2>
+            <button class="card__bottom">
+                <a class="card__bottom--link">Learn more</a>
+            </button>
+        </a>
+    </div>
 
 
-      <footer class="footer">
+
+
+    </div>
+    <footer class="footer">
 
 </footer>
-    </div>
+
     <!-- Google Analytics -->
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

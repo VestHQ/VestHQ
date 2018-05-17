@@ -1,18 +1,24 @@
-.main {
+.footer {
+  //display: flex;
+  //flex-wrap: wrap;
+  //align-items: center;
+  //justify-content: center;
+
   background-image: url("../../assets/images/footer.png");
-  height: 65vh;
   background-size: cover;
   background-position: bottom;
-  position: relative;
-  grid-row: 4;
-  grid-column: 1 / -1;
+  min-height: 100vh;
+
+  position: absolute;
+  width: 100vw;
+  //max-width: 130rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 
 
-  @include respond(tab-port){
-    background-image: url("../../assets/images/footer_mobile.png");
-  }
-
-  @include respond(phone){
+  @include respond(phone) {
     background-image: url("../../assets/images/footer_mobile.png");
   }
 }
