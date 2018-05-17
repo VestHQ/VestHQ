@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('AvenirLTStd-Book.eot');
+  src: url('AvenirLTStd-Book.woff2') format('woff2'),
+       url('AvenirLTStd-Book.woff') format('woff'),
+       url('AvenirLTStd-Book.ttf') format('truetype'),
+       url('AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg'),
+       url('AvenirLTStd-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
