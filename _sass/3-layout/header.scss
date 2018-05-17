@@ -2,15 +2,13 @@
   margin: 2.5rem auto;
   color: $title-text-color;
   z-index: 1;
-
   grid-row: 2 / span 1;
   grid-column: 1 / span 2;
-
-
 
   @include respond(tab-port) {
     margin: 0 auto;
   }
+
 
   & > * {
     margin-left: 25%;
@@ -41,6 +39,8 @@
 
     @include respond(phone) {
       font-size: 3rem;
+      margin-bottom: 1rem;
+      width: 100%;
     }
 
   }
@@ -54,6 +54,7 @@
 
     @include respond(phone) {
       font-size: 1.5rem;
+      width: 70vw;
     }
   }
 
@@ -128,7 +129,13 @@
 }
 
 
-
+//.shadow-line {
+//  @include respond(phone) {
+//    grid-row: 1 / 2;
+//    grid-column: 1 / span 2;
+//    box-shadow: 0 8px 8px -6px rgba(black, .1);
+//  }
+//}
 
 
 
