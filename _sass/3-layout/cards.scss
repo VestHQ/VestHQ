@@ -7,33 +7,39 @@
   @include respond(phone) {
     flex-direction: column;
   }
-
-
 }
 
 .card {
   font-family: $avenir;
+  padding: 1rem 0 5rem 0;
+  background-color: $card-border-color;
+  height: 33rem;
   width: 28rem;
-  background-color: $card-background-color;
   font-size: 1.5rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(black, .15);
-  border-top: 1rem solid $card-border-color;
   margin: 1rem 5rem 1rem 5rem;
   z-index: 1;
 
-  justify-content: center;
+  &:hover {
+    background-color: $card-hover-color;
+  }
+
+  &__heading {
+    background-color: $card-background-color;
+  }
 
   &__icon {
     width: 15rem;
     margin: 3.5rem auto;
     display: inline-block;
     transition: all .2s;
+    background-color: $card-background-color;
 
     @include respond(phone) {
-      width: 10rem;
-      margin: 1.5rem auto;
+      width: 11rem;
+      margin: 2rem auto;
     }
   }
 
@@ -46,49 +52,29 @@
     padding: 0 4rem;
     display: flex;
     align-items: center;
-
-    @include respond(phone) {
-      height: 12rem;
-    }
   }
 
   &__bottom {
-    height: 5rem;
-    border-radius: 3px;
-    font-size: 1.8rem;
-    font-weight: 100;
-    background-color: $card-border-color;
-
-    width: 100%;
-
-    &--link {
       color: #fff;
-    }
+      font-size: 1.8rem;
+      font-weight: 100;
+      width: 100%;
+      font-family: inherit;
+      margin-top: 1rem;
 
     &:hover {
       background-color: $card-hover-color;
-
-      &__icon:hover {
-        background-color: $card-hover-color;
-      }
     }
 
   }
 
-  @include respond(tab-land) {
-    width: 30rem;
-  }
-
-  @include respond(tab-port) {
-    width: 27rem;
-  }
-
   @include respond(phone) {
-    width: 24rem;
+    width: 25rem;
+    height: 28rem;
   }
 
   @include respond(small-phone) {
-    width: 20rem;
+    width: 21rem;
   }
 
 }

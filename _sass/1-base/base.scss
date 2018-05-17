@@ -31,20 +31,8 @@ body{
   margin: 0 auto;
 }
 
-//@media screen and (max-width: 114rem) {
-//  body {
-//    margin: auto;
-//  }
-//}
-//@media screen and (max-width: 145rem) {
-//  body {
-//    margin: 0 auto;
-//  }
-//}
-
 .grid-container {
   display: grid;
-  //height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem auto 2fr 1fr;
   grid-gap: 10px;
