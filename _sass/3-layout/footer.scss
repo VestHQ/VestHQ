@@ -1,19 +1,22 @@
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  //display: flex;
+  //flex-wrap: wrap;
+  //align-items: center;
+  //justify-content: center;
 
   background-image: url("../../assets/images/footer.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   min-height: 100vh;
-  //max-height: 70vh;
 
-  position: fixed;
+  position: absolute;
   width: 100vw;
+  //max-width: 130rem;
+  left: 0;
+  right: 0;
   bottom: 0;
-  min-width: 80vw;
+  margin: auto;
+
 
   @include respond(phone) {
     background-image: url("../../assets/images/footer_mobile.png");

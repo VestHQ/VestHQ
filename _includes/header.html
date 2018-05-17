@@ -6,17 +6,22 @@
 
         <form name="contact" class="header__input-box">
             <input class="header__input" name="email" type="email" required>
-            <button class="header__btn" type="submit">Sign me up!</button>
+            <button id="btn" class="header__btn" type="submit" onclick="toggleText()">Sign me up!</button>
         </form>
         <script>
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec"
-            const form = document.forms['contact']
+            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec";
+            const form = document.forms['contact'];
             form.addEventListener('submit', e => {
-                e.preventDefault()
+                e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
-            })
+            });
+
+            let toggleText = () => {
+                let button = document.getElementById("btn");
+                button.innerHTML= "Thanks!"
+            }
         </script>
     </div>
 </header>
