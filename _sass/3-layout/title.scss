@@ -8,6 +8,10 @@
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
 
+    @include respond(phone) {
+      width: 6rem;
+    }
+
   }
 
   &__contact {
@@ -18,8 +22,11 @@
     justify-content: flex-end;
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
-  }
 
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
+  }
 
 }
 
