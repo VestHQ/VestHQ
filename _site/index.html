@@ -2,7 +2,7 @@
 <html>
   <head>
     <!-- Meta Matter-->
-<title>VestHQ</title>
+<title>Vest</title>
 <meta name="description" content="A fintech lab.">
 <meta name="keywords" content="fintech, news, media">
 <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon.png" />
@@ -26,11 +26,14 @@
     <div class="header__text-box">
         <h1 class="header__primary">Retirement is now Accessible</h1>
         <h2 class="header__secondary">We combined cutting-edge behavioral economics
-                with smart portfolio management for plans that are designed to empower.</h2>
+                with smart portfolio management for plans that are designed to empower. <br><br>
+            Sign up to get the latest updates from Vest
+        </h2>
 
         <form name="contact" class="header__input-box" onsubmit="toggleText()">
-            <input class="header__input" name="email" type="email" required>
-            <button id="btn" class="header__btn" type="submit">Sign me up!</button>
+            <input name="email" type="email" class="header__input" placeholder="you@email.com" id="email" required>
+            <label for="email" class="header__label">Email</label>
+            <button id="btn" class="header__input__btn" type="submit">Sign me up!</button>
         </form>
         <span class="shadow-line"></span>
         <script>
@@ -52,6 +55,7 @@
 </header>
 
     </div>
+    <!--<div style="display: block;"></div>-->
     <div class="card-container">
       
 
@@ -83,9 +87,11 @@
 
 
     </div>
-    <footer class="footer">
+    <div class="footer-container">
+      <footer class="footer">
 
 </footer>
+    </div>
 
     <!-- Google Analytics -->
 <script>

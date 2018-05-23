@@ -1,3 +1,8 @@
+.footer-container {
+
+}
+
+
 .footer {
   background-image: url("../../assets/images/footer.png");
   background-size: cover;
@@ -5,15 +10,15 @@
   min-height: 100vh;
 
   position: fixed;
-  max-width: 130rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;
+  max-width: 1800px;
+  left: 0; right: 0; bottom: 0;
   margin: auto;
 
-  //@include respond(ipad) {
-  //  background-image: url("../../assets/images/footer_mobile.png");
-  //  max-height: 60vh;
+
+  //@media screen and (max-height: 900px) {
+  //  background-size: 100% 90%;
+  //  background-repeat: no-repeat;
   //}
 
   @include respond(phone) {

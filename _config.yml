@@ -15,5 +15,11 @@ email: tripathi@vesthq.com
 url: http://www.vesthq.com
 repository: https://github.com/vesthq/vesthq
 google_analytics: UA-72011621-1
+
 plugins:
   - jekyll-sitemap
+  - jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+    - last 10 versions

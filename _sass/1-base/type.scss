@@ -15,19 +15,19 @@
 
 
 p#logo span:first-child{
-  color: $vesthq-first;
+  color: $light-blue;
 }
 
 
 p#logo span:last-child{
-  color: $vesthq-second;
+  color: $mid-blue;
 }
 
 
 .title{
   font-family: $avenir;
   text-align: center;
-  color: $title-text-color;
+  color: $dark-blue;
   //width: 50vw;
   &__heading{
     font-weight: bold;

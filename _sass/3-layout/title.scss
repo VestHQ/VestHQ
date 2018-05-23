@@ -1,5 +1,5 @@
 .nav{
-  margin: 3rem 2rem;
+  margin: 3rem 2rem 2rem 2rem;
   display: flex;
 
   &__logo {
@@ -11,7 +11,7 @@
   }
 
   &__contact {
-    color: $title-text-color;
+    color: $dark-blue;
     font-size: 2rem;
     font-weight: 600;
 
