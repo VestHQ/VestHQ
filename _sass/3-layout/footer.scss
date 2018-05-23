@@ -31,7 +31,13 @@
   padding: 2rem 3rem;
   margin: 0 auto;
 
-  @include respond(big-desktop, mid-phone) {
+  @include respond(big-desktop) {
+    position: relative;
+    bottom: 0;
+  }
+
+
+  @include respond(mid-phone) {
     position: relative;
     bottom: 0;
   }
