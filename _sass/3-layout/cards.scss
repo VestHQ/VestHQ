@@ -57,11 +57,12 @@
 
   &__bottom {
       color: #fff;
-      font-size: 1.8rem;
-      font-weight: 100;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-family: "Avenir, Heavy", $avenir;
+      font-weight: 600;
       width: 100%;
-      font-family: inherit;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
 
     &:hover {
       background-color: $card-hover-color;

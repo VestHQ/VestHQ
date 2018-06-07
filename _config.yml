@@ -7,6 +7,8 @@ sass:
   sass_dir: _sass
   style: compressed
 
+exclude: [".idea/"]
+
 # Site settings
 title: Vest
 description: "A fintech lab."

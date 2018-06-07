@@ -1,6 +1,6 @@
 
 .footer {
-  background-image: url("../../assets/images/footer.png");
+  background-image: url("../../assets/images/footer_large.svg");
   background-size: cover;
   background-position: bottom;
   min-height: 100vh;
@@ -11,14 +11,8 @@
   left: 0; right: 0; bottom: 0;
   margin: auto;
 
-
-  //@media screen and (max-height: 900px) {
-  //  background-size: 100% 90%;
-  //  background-repeat: no-repeat;
-  //}
-
   @include respond(phone) {
-    background-image: url("../../assets/images/footer_mobile.png");
+    background-image: url("../../assets/images/footer_mobile.svg");
   }
 }
 
