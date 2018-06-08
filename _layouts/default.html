@@ -4,16 +4,20 @@
     {% include meta.html %}
   </head>
   <body>
-    <div class="grid-container">
+    <div class="wrapper">
       {% include title.html %}
-      {% include header.html %}
-    </div>
+      <div class="flex-container">
+        {% include header.html %}
+      </div>
 
-    <div class="card-container">
-      {% include cards.html %}
-    </div>
+      <div class="card-container">
+        {% include cards.html %}
+      </div>
+      <div class="spacer">.</div>
       {% include footer.html %}
 
-    {% include scripts.html %}
+      {% include scripts.html %}
+    </div>
+
   </body>
 </html>

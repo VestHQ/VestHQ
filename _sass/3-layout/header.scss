@@ -2,12 +2,6 @@
   margin: 2.5rem auto;
   color: $dark-blue;
   z-index: 1;
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 2;
-
-  @include respond(tab-port) {
-    margin: 0 auto;
-  }
 
   @include respond(phone) {
     width: 100vw;
@@ -37,7 +31,8 @@
   &__primary {
     display: inline-block;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 2.6rem;
 
     @include respond(phone) {
@@ -71,7 +66,7 @@
     height: 4rem;
     font-size: 1.6rem;
     margin-left: 5rem;
-    //border-radius: .3rem;
+    box-shadow: 0 1rem 1rem rgba($dark-blue, 0.1);
     text-align: center;
 
     border-bottom: 2px solid $dark-blue;
@@ -92,10 +87,9 @@
     }
 
     &__btn {
-      //margin-left: 3.6rem;
       font-size: 1.6rem;
       padding: 0 1rem;
-      //letter-spacing: 1px;
+      border: none;
       border-radius: 2px;
       background-color: #0453AE;
       color: white;

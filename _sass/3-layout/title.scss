@@ -1,13 +1,15 @@
 .nav{
   font-family: 'Avenir Roman', $avenir;
-  margin: 3rem 2rem 2rem 2rem;
+  margin: 3.5rem 2rem 2rem 2rem;
   display: flex;
+  justify-content: space-between;
 
   &__logo {
-    width: 8rem;
+    //width: 8rem;
+    height: 2.5rem;
 
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    //grid-row: 1 / span 1;
+    //grid-column: 1 / span 1;
 
     @include respond(phone) {
       width: 6rem;
@@ -19,10 +21,11 @@
     color: $dark-blue;
     font-size: 2rem;
     font-weight: 600;
+    text-decoration: none;
 
-    justify-content: flex-end;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
+
+    //grid-row: 1 / span 1;
+    //grid-column: 2 / span 1;
 
     @include respond(phone) {
       font-size: 1.6rem;

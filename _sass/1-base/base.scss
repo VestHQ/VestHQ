@@ -27,17 +27,25 @@ body{
   box-sizing: border-box;
   font-family: 'Avenir Next', $avenir;
   max-width: 130rem;
+
+  overflow: auto;
   background-color: #fff;
   margin: 0 auto;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 6rem auto 2fr 1fr;
-  grid-gap: 10px;
-  align-content: stretch;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.spacer {
+  flex: 1;
+  color: transparent;
+}
 
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
 
