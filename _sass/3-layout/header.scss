@@ -1,5 +1,5 @@
 .header {
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   color: $dark-blue;
   z-index: 1;
 
@@ -24,8 +24,6 @@
   &__text-box {
     text-align: center;
     margin: 0 auto;
-
-
   }
 
   &__primary {
@@ -33,7 +31,7 @@
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: 2.6rem;
+    margin-bottom: .5rem;
 
     @include respond(phone) {
       font-size: 3rem;

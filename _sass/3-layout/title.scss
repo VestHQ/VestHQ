@@ -5,16 +5,11 @@
   justify-content: space-between;
 
   &__logo {
-    //width: 8rem;
     height: 2.5rem;
-
-    //grid-row: 1 / span 1;
-    //grid-column: 1 / span 1;
 
     @include respond(phone) {
       height: 2rem;
     }
-
   }
 
   &__contact {
@@ -23,15 +18,10 @@
     font-weight: 600;
     text-decoration: none;
 
-
-    //grid-row: 1 / span 1;
-    //grid-column: 2 / span 1;
-
     @include respond(phone) {
       font-size: 1.6rem;
     }
   }
-
 }
 
 .shadow-line {
