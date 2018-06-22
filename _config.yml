@@ -20,7 +20,7 @@ google_analytics: UA-72011621-1
 
 plugins:
   - jekyll-sitemap
-  - jekyll-autoprefixer
+#  - jekyll-autoprefixer
 
 autoprefixer:
   browsers:
