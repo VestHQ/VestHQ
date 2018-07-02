@@ -2,9 +2,11 @@
   font-family: 'Avenir Roman', $avenir;
   margin: 3.5rem 2rem 2rem 2rem;
   display: flex;
-  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 
   &__logo {
+    margin-left: auto;
     height: 2.5rem;
 
     @include respond(phone) {
@@ -17,9 +19,39 @@
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
+    align-self: flex-end;
+    border: 1px solid $dark-blue;
+    border-radius: 2px;
+    padding: 1rem 1.5rem;
+
+    &:hover {
+      background-color: $bright-blue-hover;
+      color: #fff;
+    }
 
     @include respond(phone) {
       font-size: 1.6rem;
+    }
+    @include respond(mid-phone) {
+      padding: .7rem 1rem;
+    }
+  }
+
+  &__team {
+    @extend .nav__contact;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 4rem;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: #F2F9FF;
+      border: 1px solid #F2F9FF;
+      color: $dark-blue;
+    }
+
+    @include respond(mid-phone) {
+      margin-right: 2rem;
     }
   }
 }

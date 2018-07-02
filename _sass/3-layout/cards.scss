@@ -12,7 +12,7 @@
 .card {
   font-family: $avenir;
   padding: 1rem 0 5rem 0;
-  background-color: $card-border-color;
+  background-color: $bright-blue;
   height: 33rem;
   width: 28rem;
   font-size: 1.5rem;
@@ -23,7 +23,7 @@
   z-index: 1;
 
   &:hover {
-    background-color: $card-hover-color;
+    background-color: $bright-blue-hover;
   }
 
   &__heading {
@@ -48,7 +48,7 @@
     color: $dark-blue;
     height: 15rem;
     font-size: 1.6rem;
-    line-height: 1.7;
+    line-height: 1.5;
     padding: 0 4rem;
     display: flex;
     align-items: center;
@@ -62,9 +62,10 @@
     font-weight: 600;
     width: 100%;
     margin-top: 1.5rem;
+    letter-spacing: 1px;
 
     &:hover {
-      background-color: $card-hover-color;
+      background-color: $bright-blue-hover;
     }
 
     @include respond(phone) {
