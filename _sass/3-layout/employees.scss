@@ -1,0 +1,37 @@
+.employees-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 4rem;
+
+
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+
+    &__img {
+      height: 15rem;
+      width: auto;
+      margin: 0 2rem 3rem 0;
+    }
+
+    .text-box{
+      align-self: center;
+      margin-right: 2rem;
+
+      &:first-child {
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      &:nth-child(2) {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+
+
+  }
+
+}

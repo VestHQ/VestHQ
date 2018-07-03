@@ -20,7 +20,7 @@
     font-weight: 600;
     text-decoration: none;
     align-self: flex-end;
-    border: 1px solid $dark-blue;
+    border: 2px solid $dark-blue;
     border-radius: 2px;
     padding: 1rem 1.5rem;
 
@@ -42,11 +42,11 @@
     align-self: center;
     margin-left: auto;
     margin-right: 4rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 
     &:hover {
       background-color: #F2F9FF;
-      border: 1px solid #F2F9FF;
+      border: 2px solid #F2F9FF;
       color: $dark-blue;
     }
 

@@ -1,0 +1,41 @@
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 120rem;
+  margin: 4rem auto;
+  font-family: 'Avenir Next', $avenir;
+  color: $dark-blue;
+
+  &__heading {
+    margin: 0 4rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    align-self: flex-start;
+  }
+
+  &__secondary {
+    font-size: 1.6rem;
+    width: 55%;
+  }
+
+  &__link {
+    font-family: inherit;
+    color: $dark-blue;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+
+    &__heading {
+      margin-bottom: 1.5rem;
+      align-self: center;
+      text-align: left;
+    }
+    &__secondary {
+      width: 80%;
+    }
+  }
+}
