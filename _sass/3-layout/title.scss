@@ -7,7 +7,7 @@
 
   &__logo {
     margin-left: auto;
-    height: 2.5rem;
+    height: 2.2rem;
 
     @include respond(phone) {
       height: 2rem;
@@ -16,7 +16,7 @@
 
   &__contact {
     color: $dark-blue;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
     align-self: flex-end;
