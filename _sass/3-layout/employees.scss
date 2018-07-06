@@ -34,6 +34,10 @@
     a{
       text-decoration: none;
       color: $dark-blue;
+
+      &:hover {
+        color: $bright-blue;
+      }
     }
   }
 

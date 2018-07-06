@@ -86,3 +86,46 @@
 .card a:link, a:visited {
   text-decoration: none;
 }
+
+.card2 {
+  @extend .card;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  border-top: 1rem solid $bright-blue;
+
+  &__side {
+    transition: all 1.5s ease;
+    position: absolute;
+    width: 100%;
+    top: 0; left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &--back {
+      transform: rotateY(180deg);
+    }
+  }
+  &__text {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 3rem;
+    line-height: 1.5;
+
+    @include respond(small-phone) {
+      padding: 1.5rem;
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    //flip back to original position
+    transform: rotateY(0);
+  }
+
+}
