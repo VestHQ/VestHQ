@@ -10,10 +10,20 @@
     flex-wrap: wrap;
     margin: 0 1rem;
 
+    &:nth-child(2) {
+      @media screen and (max-width: 530px) {
+        width: 224px;
+      }
+    }
+
     &__img {
       height: 15rem;
       width: auto;
       margin: 0 2rem 3rem 0;
+
+      @include respond(mid-phone) {
+        margin-bottom: 0;
+      }
     }
 
     .text-box{
