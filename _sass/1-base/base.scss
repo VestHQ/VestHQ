@@ -27,8 +27,7 @@ body{
   box-sizing: border-box;
   font-family: 'Avenir Next', $avenir;
   max-width: 120rem;
-
-  overflow: auto;
+  overflow-x: hidden;
   background-color: #fff;
   margin: 0 auto;
 }

@@ -44,7 +44,7 @@
   &__secondary {
     font-weight: 400;
     font-size: 2rem;
-    margin: 0 auto 2.6rem auto;
+    margin: 0 auto 1.6rem auto;
     text-align: center;
     width: 50vw;
 
@@ -68,10 +68,6 @@
     text-align: center;
 
     border: 1px solid grey;
-    //border-top: none;
-    //border-left: none;
-    //border-right: none;
-
     transition: all .5s;
     padding: 1.5rem 2rem;
 
@@ -82,6 +78,8 @@
 
     @include respond(phone) {
       width: 15rem;
+      text-align: left;
+      font-size: 1.4rem;
     }
 
     &__btn {
@@ -166,30 +164,28 @@ span{
   overflow: hidden;
 }
 .rw-words span{
-  animation: changeWords 18s infinite;
+  animation: changeWords 18s infinite -2s;
+  //animation-delay: -2s;
   animation-timing-function: ease-out;
 
   &:nth-child(2){
-    animation-delay: 3s;
+    animation-delay: 1.2s;
   }
   &:nth-child(3) {
-    animation-delay: 6s;
+    animation-delay: 4.3s;
   }
   &:nth-child(4){
-    animation-delay: 9s;
+    animation-delay: 7.3s;
   }
   &:nth-child(5) {
-    animation-delay: 12s;
+    animation-delay: 10.5s;
   }
   &:nth-child(6) {
-    animation-delay: 15s;
+    animation-delay: 13.5s;
   }
 }
 
 @keyframes changeWords{
-  //from {opacity: 1}
-  //to {opacity: 0}
-
   0%{
     opacity: 1;
     width: 0;
