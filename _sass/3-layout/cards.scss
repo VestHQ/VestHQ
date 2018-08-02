@@ -121,11 +121,23 @@
 
   &:hover &__side--front {
     transform: rotateY(-180deg);
+
+    @include respond(small-phone) {
+      &:active {
+        transform: rotateY(-180deg);
+      }
+    }
   }
 
   &:hover &__side--back {
     //flip back to original position
     transform: rotateY(0);
+
+    @include respond(small-phone) {
+      &:active {
+        transform: rotateY(0);
+      }
+    }
   }
 
 }
