@@ -1,0 +1,64 @@
+.btn {
+  font-family: "Avenir Next", Chivo, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  text-align: center;
+  padding: 1rem 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+  .error-body {
+  background-image: linear-gradient(to bottom, $cold-blue, $dark-blue);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: $light-blue-grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .lost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+      font-size: 2.4rem;
+      font-family: "Avenir Next", Chivo, sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 3rem auto;
+
+      @include respond(sm-phone) {
+        margin: 2rem auto;
+      }
+    }
+
+    &__img {
+      width: 30rem;
+      height: auto;
+
+      @include respond(sm-phone) {
+        width: 22rem;
+      }
+    }
+
+    &__btn {
+      background-color: $light-blue-grey;
+      border: 2px solid $light-blue-grey;
+      font-family: "Avenir Next", Chivo, sans-serif;
+      color: $dark-blue;
+      padding: 1rem 1.4rem;
+      transition: background-color .6s;
+
+      &:hover {
+        background-color: transparent;
+        color: $light-blue-grey;
+      }
+    }
+  }
+}
