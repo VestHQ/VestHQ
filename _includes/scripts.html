@@ -1,3 +1,7 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script>
     // <!-- Google Analytics -->
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -10,5 +14,34 @@
         'page': '{{ site.baseurl }}{{ page.url }}',
         'title': '{{ page.title | replace: "'", "\\'" }}'
     });
+
+    // <!-- Slack presence -->
+    const url = "https://slack.com/api/users.list?token=xoxb-88445265909-426391251414-MEXRyaZ171j3BofC9dNzsLsm&presence=true&pretty=1";
+    const memberIDs = ["U2LBEUZC3", "U5LA2KATX", "U7B7X86AF", "U8MQ4L0R0", "U90BBNSNN", "U97UY5M3J", "UAKEWKP9A", "UASE60N5R", "UB3UNC4TB", "UB9FKE6NA"]
+    function filterTeamFromResponse(response){
+        var teamList = [];
+        teamList = response.members.filter(function(member){
+            return memberIDs.includes(member.id);
+        });
+        return teamList;
+    }
+
+    function setPresence(member){
+        if(member.presence == 'active'){
+            $('#' + member.id).css({"color": "green"});
+        }else{
+            $('#' + member.id).css({"color": "red"});
+        }
+    }
+
+    $.get(url, function(response, status){
+        if(status == 'success'){
+            var team = filterTeamFromResponse(response);
+            for (member in team){
+                setPresence(team[member]);
+            }
+        }
+    });
+
 </script>
 
