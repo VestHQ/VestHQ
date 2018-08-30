@@ -73,28 +73,12 @@
     // <!-- Slack presence -->
     const url = "https://app.harborhq.com/slack_presence/";
     const memberIDs = ["U2LBEUZC3", "U5LA2KATX", "U7B7X86AF", "U8MQ4L0R0", "U90BBNSNN", "U97UY5M3J", "UAKEWKP9A", "UASE60N5R", "UB3UNC4TB", "UB9FKE6NA"]
-    // function filterTeamFromResponse(response){
-    //     var teamList = [];
-    //     console.log(response);
-    //     teamList = response.filter(function(member){
-    //         return memberIDs.includes(member.key());
-    //     });
-    //     return teamList;
-    // }
-
-    function setPresence(member, presence){
-        console.log(member, presence);
-        if(presence == 'active'){
-            $('#' + member).css({"color": "green"});
-        }else{
-            $('#' + member).css({"color": "red"});
-        }
-    }
 
     $.get(url, function(response, status){
         if(status == 'success'){
-            for (member in memberIDs){
-                setPresence(memberIDs[member], response[memberIDs[member]]);
+            for (var memberID of memberIDs){
+                var presence = response[memberID]
+                presence == 'active' ? $('#' + memberID).css({"color": "green"}) : $('#' + memberID).css({"color": "red"});
             }
         }
     });
