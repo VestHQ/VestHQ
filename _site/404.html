@@ -71,29 +71,30 @@
     });
 
     // <!-- Slack presence -->
-    const url = "https://slack.com/api/users.list?token=xoxb-88445265909-426391251414-MEXRyaZ171j3BofC9dNzsLsm&presence=true&pretty=1";
+    const url = "https://app.harborhq.com/slack_presence/";
     const memberIDs = ["U2LBEUZC3", "U5LA2KATX", "U7B7X86AF", "U8MQ4L0R0", "U90BBNSNN", "U97UY5M3J", "UAKEWKP9A", "UASE60N5R", "UB3UNC4TB", "UB9FKE6NA"]
-    function filterTeamFromResponse(response){
-        var teamList = [];
-        teamList = response.members.filter(function(member){
-            return memberIDs.includes(member.id);
-        });
-        return teamList;
-    }
+    // function filterTeamFromResponse(response){
+    //     var teamList = [];
+    //     console.log(response);
+    //     teamList = response.filter(function(member){
+    //         return memberIDs.includes(member.key());
+    //     });
+    //     return teamList;
+    // }
 
-    function setPresence(member){
-        if(member.presence == 'active'){
-            $('#' + member.id).css({"color": "green"});
+    function setPresence(member, presence){
+        console.log(member, presence);
+        if(presence == 'active'){
+            $('#' + member).css({"color": "green"});
         }else{
-            $('#' + member.id).css({"color": "red"});
+            $('#' + member).css({"color": "red"});
         }
     }
 
     $.get(url, function(response, status){
         if(status == 'success'){
-            var team = filterTeamFromResponse(response);
-            for (member in team){
-                setPresence(team[member]);
+            for (member in memberIDs){
+                setPresence(memberIDs[member], response[memberIDs[member]]);
             }
         }
     });
