@@ -72,7 +72,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.0)
+  jekyll (~> 3.8.5)
   jekyll-autoprefixer
   jekyll-feed (~> 0.6)
   jekyll-sitemap
