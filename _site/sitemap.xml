@@ -14,6 +14,12 @@
 <loc>http://localhost:4000/team/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/test-home/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/test-team/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/googlef3549df4c52ef8ee.html</loc>
 <lastmod>2018-07-31T18:00:42-05:00</lastmod>
 </url>
