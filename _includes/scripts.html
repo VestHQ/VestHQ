@@ -23,7 +23,7 @@
         if(status == 'success'){
             for (var memberID of memberIDs){
                 var presence = response[memberID]
-                presence == 'active' ? $('#' + memberID).css({"color": "green"}) : $('#' + memberID).css({"color": "red"});
+                presence == 'active' ? $('#' + memberID).css({"color": "green"}) : $('#' + memberID).css({"color": "#102A5E"});
             }
         }
     });
