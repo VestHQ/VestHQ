@@ -16,7 +16,7 @@
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content } //600px
   }
-  @if $breakpoint == large-phone {
+  @if $breakpoint == l-phone {
     @media (max-width: 43.125em) { @content } //690px
   }
   @if $breakpoint == ipad {

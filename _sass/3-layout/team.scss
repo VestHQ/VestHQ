@@ -1,37 +1,36 @@
-// slack status circle
-.status {
+.employees-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 4rem;
 
-  &--1 {
-    //margin-left: 2rem;
-    font-size: 1.3rem;
+  @include respond(l-phone) {
+    justify-content: space-evenly;
   }
-
 }
-
 // avatar -> container for img and text
 .avatar {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   margin: 0 2rem;
 
   &__img {
     width: auto;
     margin: 0 2rem 1rem 0;
 
-    &--1 {
+    height: 20rem;
+
+    @include respond(l-phone) {
       height: 15rem;
     }
-    &--2 {
-      height: 20rem;
-    }
-    &--3 {
-      height: 10rem;
+    @include respond(small-phone) {
+      height: 12rem;
     }
   }
 
   &__content {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     text-align: center;
 
     &--1 {
@@ -62,6 +61,13 @@
     }
     p {
       font-size: 1.4rem;
+      transform: translateX(-4px);
+    }
+    // slack status circle
+    i {
+      font-size: 1.3rem;
+      margin: .4rem;
+      transform: translateY(-3px);
     }
   }
 }
