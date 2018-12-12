@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Matter-->
+<head>
+  <!-- Meta Matter-->
 <title>Vest | Modern 401(k)</title>
 <meta name="description" content="A fintech lab.">
 <meta name="keywords" content="fintech, news, media, affordable, modern, 401(k), retirement, full-service, automated, retirement, pre-tax, auto-enrollment, HR-tech, Fintech, Chicago, Illinois, mobile, compliance, fiduciary, harbor, harborhq, manifest ledger">
@@ -50,10 +50,11 @@
 }
 </script>
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="nav">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="nav">
     <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-colors.jpg" alt="vest logo" class="nav__logo"></a>
 
     <a href="/team" class="nav__team">Our Team</a>
@@ -66,8 +67,8 @@
 
     <div class="shadow-line"></div>
 
-      <div class="flex-container">
-        <header class="header">
+  <div class="flex-container">
+    <header class="header">
     <div class="header__text-box">
         <h1 class="header__primary">Retirement is now Accessible</h1>
         <div class="header__secondary">We combined cutting-edge behavioral economics
@@ -108,10 +109,10 @@
     </div>
 </header>
 
-      </div>
+  </div>
 
-      <div class="card-container">
-        
+  <div class="card-container">
+    
 <div class="card">
     <div class="card--1">
         <a href="http://harborhq.com" >
@@ -148,9 +149,9 @@
 
 
 
-      </div>
-      <div class="spacer">.</div>
-      <div class="copyright">
+  </div>
+  <div class="spacer">.</div>
+  <div class="copyright">
     &copy; Vest, Inc. 2018
     <br>
     VestHQ, LLC is an investment advisor registered with the Securities and Exchange Commission. Consider the investment objectives, risks, and charges and expenses of funds recommended by VestHQ carefully before investing.  VestHQ does not provide tax, legal or accounting advice.
@@ -163,43 +164,7 @@
     <!--</picture>-->
 
 </footer>
+</div>
 
-      <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script>
-    // <!-- Google Analytics -->
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-72011621-1', 'auto');
-    ga('send', 'pageview', {
-        'page': '/',
-        'title': 'Vest | Modern 401(k)'
-    });
-
-    // <!-- Slack presence -->
-    const url = "https://app.harborhq.com/slack_presence/";
-    const memberIDs = ["U2LBEUZC3", "U5LA2KATX", "U7B7X86AF", "U8MQ4L0R0", "U90BBNSNN", "U97UY5M3J", "UAKEWKP9A", "UASE60N5R", "UB3UNC4TB", "UB9FKE6NA"]
-
-    $.get(url, function(response, status){
-        if(status == 'success'){
-            for (var memberID of memberIDs){
-                var presence = response[memberID]
-                presence == 'active' ? $('#' + memberID).css({"color": "green"}) : $('#' + memberID).css({"color": "#102A5E"});
-            }
-        }
-    });
-
-
-    document.querySelector('video').playbackRate = 0.3;
-</script>
-
-
-    </div>
-
-  </body>
+</body>
 </html>

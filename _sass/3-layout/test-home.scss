@@ -1,4 +1,8 @@
+.body {
+  position: relative;
+}
 .bg-video {
+  background-image: linear-gradient(to bottom right, $dark-blue, $cold-blue);
   position: absolute;
   top: 0;
   left: 0;

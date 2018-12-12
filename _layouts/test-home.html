@@ -4,12 +4,19 @@
     {% include meta.html %}
 </head>
 <body>
-<div class="wrapper">
+<div class="bg-video">
+    <video class="bg-video__content" autoplay muted loop>
+        <source src="../assets/videos/waves.mp4" type="video/mp4">
+    </video>
     {% include title.html %}
-    {% include test-home.html %}
+    <div class="flex-container">
+        {% include header.html %}
+    </div>
 
-    {% include scripts.html %}
+    <div class="card-container">
+        {% include cards.html %}
+    </div>
 </div>
-
+{% include scripts.html %}
 </body>
 </html>
