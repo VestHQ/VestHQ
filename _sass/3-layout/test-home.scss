@@ -2,6 +2,7 @@
   //position: relative;
   margin: 0 auto;
   max-width: $max-page-width;
+  height: 100vh;
 }
 //.bg-video {
 //  position: absolute;
@@ -57,7 +58,7 @@
       position: absolute;
       top: 0; right: 0; left: 0; bottom: 0;
       z-index: 1;
-      background: linear-gradient(to bottom right, rgba($dark-blue , 0.9), rgba($cold-blue, 0.9));
+      background: linear-gradient(to top right, rgba($dark-blue, 0.9) , rgba($cold-blue, 0.9));
     }
   }
 }
