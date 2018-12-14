@@ -18,24 +18,28 @@ html {
   @include respond(tab-port) { // width < 900?
     font-size: 50%;
   }
-  @include respond(big-desktop) {
-    font-size: 75%;
-  }
+  //@include respond(big-desktop) {
+  //  font-size: 75%;
+  //}
 }
 
 body{
   box-sizing: border-box;
   font-family: 'Avenir Next', $avenir;
-  max-width: 120rem;
+  //max-width: $max-page-width;
   overflow-x: hidden;
   background-color: #fff;
   margin: 0 auto;
+
+  position: relative;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0 auto;
+  max-width: $max-page-width;
 }
 .spacer {
   flex: 1;

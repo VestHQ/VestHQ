@@ -1,20 +1,26 @@
-.body {
-  position: relative;
+.home-container {
+  //position: relative;
+  margin: 0 auto;
+  //padding: 1rem 0 5rem 0;
+  //width: 100vw;
+  max-width: $max-page-width;
 }
 .bg-video {
-  background-image: linear-gradient(to bottom right, $dark-blue, $cold-blue);
+  //background-image: linear-gradient(to bottom right, $dark-blue, $cold-blue);
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   z-index: -1;
   opacity: .15;
   overflow: hidden;
 
   &__content {
+    //z-index: -1;
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
+
 }

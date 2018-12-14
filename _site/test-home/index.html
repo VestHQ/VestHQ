@@ -52,12 +52,14 @@
 
 </head>
 <body>
-<div class="bg-video">
+<section class="home-container">
+    <div class="bg-video">
     <video class="bg-video__content" autoplay muted loop>
         <source src="../assets/videos/waves.mp4" type="video/mp4">
     </video>
+</div>
     <div class="nav">
-    <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-colors.jpg" alt="vest logo" class="nav__logo"></a>
+    <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo"></a>
 
     <a href="/team" class="nav__team">Our Team</a>
 
@@ -152,7 +154,12 @@
 
 
     </div>
-</div>
+    <div class="copyright" style="color: #102A5E;">
+        &copy; Vest, Inc. 2018
+        <br>
+        VestHQ, LLC is an investment advisor registered with the Securities and Exchange Commission. Consider the investment objectives, risks, and charges and expenses of funds recommended by VestHQ carefully before investing.  VestHQ does not provide tax, legal or accounting advice.
+    </div>
+</section>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -184,6 +191,7 @@
     });
 
 
+    // slow down video speed
     document.querySelector('video').playbackRate = 0.3;
 </script>
 
