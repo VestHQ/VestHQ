@@ -54,65 +54,64 @@
 <body>
 <section class="home-container">
     <div class="bg-video">
-    <video class="bg-video__content" autoplay muted loop>
-        <source src="../assets/videos/waves.mp4" type="video/mp4">
-    </video>
+    <div class="bg-video__content">
+        <video autoplay loop muted>
+            <source src="../assets/videos/Beach.mp4" type="video/mp4" /> Your browser does not support the video
+        </video>
+    </div>
 </div>
+
     <div class="nav">
-    <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo"></a>
+        <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-white.png" alt="vest logo" class="nav__logo lg-logo"></a>
 
-    <a href="/team" class="nav__team">Our Team</a>
+        <a href="/team" class="nav__team color-white">Our Team</a>
 
-    <a class="typeform-share button nav__contact"  href="https://sierramoore.typeform.com/to/if9Lis" data-mode="drawer_left"  target="_blank">Contact Us</a>
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <a class="typeform-share button nav__contact color-white border-white"  href="https://sierramoore.typeform.com/to/if9Lis" data-mode="drawer_left"  target="_blank">Contact Us</a>
+        <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
-</div>
-
-
-    <div class="shadow-line"></div>
+    </div>
 
     <div class="flex-container">
-        <header class="header">
-    <div class="header__text-box">
-        <h1 class="header__primary">Retirement is now Accessible</h1>
-        <div class="header__secondary">We combined cutting-edge behavioral economics
-            with smart portfolio management for plans that are designed to
-            <div class="rw-words">
-                <span>empower.</span>
-                <span>excite.</span>
-                <span>scale.</span>
-                <span>educate.</span>
-                <span>use.</span>
-                <span>enjoy.</span>
+        <header class="header color-white">
+            <div class="header__text-box">
+                <h1 class="header__primary">Retirement is now Accessible</h1>
+                <div class="header__secondary">We combined cutting-edge behavioral economics
+                    with smart portfolio management for plans that are designed to
+                    <div class="rw-words color-white">
+                        <span>empower.</span>
+                        <span>excite.</span>
+                        <span>scale.</span>
+                        <span>educate.</span>
+                        <span>use.</span>
+                        <span>enjoy.</span>
+                    </div>
+                </div>
+                <h2 class="header__secondary">Sign up to get our latest updates:</h2>
+
+
+                <form name="contact" class="header__input-box" onsubmit="toggleText()">
+                    <input name="email" type="email" class="header__input" placeholder="hello@vesthq.com" id="email" required>
+                    <label for="email" class="header__label">Email</label>
+                    <button id="btn" class="header__input__btn" type="submit">Sign me up!</button>
+                </form>
+                <span class="shadow-line"></span>
+                <script async>
+                    const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec";
+                    const form = document.forms['contact'];
+                    form.addEventListener('submit', e => {
+                        e.preventDefault();
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => console.log('Success!', response))
+                            .catch(error => console.error('Error!', error.message))
+                    });
+
+                    const toggleText = () => {
+                        const button = document.getElementById("btn");
+                        button.innerText = "Thanks!"
+                    }
+                </script>
             </div>
-        </div>
-        <h2 class="header__secondary">Sign up to get our latest updates:</h2>
-
-
-        <form name="contact" class="header__input-box" onsubmit="toggleText()">
-            <input name="email" type="email" class="header__input" placeholder="hello@vesthq.com" id="email" required>
-            <label for="email" class="header__label">Email</label>
-            <button id="btn" class="header__input__btn" type="submit">Sign me up!</button>
-        </form>
-        <span class="shadow-line"></span>
-        <script async>
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec";
-            const form = document.forms['contact'];
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-            });
-
-            const toggleText = () => {
-                const button = document.getElementById("btn");
-                button.innerText = "Thanks!"
-            }
-        </script>
-    </div>
-</header>
-
+        </header>
     </div>
 
     <div class="card-container">
@@ -154,7 +153,7 @@
 
 
     </div>
-    <div class="copyright" style="color: #102A5E;">
+    <div class="copyright">
         &copy; Vest, Inc. 2018
         <br>
         VestHQ, LLC is an investment advisor registered with the Securities and Exchange Commission. Consider the investment objectives, risks, and charges and expenses of funds recommended by VestHQ carefully before investing.  VestHQ does not provide tax, legal or accounting advice.
@@ -192,7 +191,7 @@
 
 
     // slow down video speed
-    document.querySelector('video').playbackRate = 0.3;
+    // document.querySelector('video').playbackRate = 0.3;
 </script>
 
 
