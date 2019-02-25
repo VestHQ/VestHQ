@@ -1,40 +1,95 @@
 .footer {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  margin: auto;
-  width: 100vw;
-  max-width: 1400px;
-  height: 100%;
-  max-height: 400px;
+  flex-shrink: 0;
 
-  background-image: url("../../assets/images/footer_large-1.jpg");
-
-  @media screen and (min-width: 1100px) {
-    background-size: cover;
-    background-position: top;
-  }
-
-  @include respond (mid-phone) {
-    background-size: cover;
-    background-image: url("../../assets/images/footer_small-1.jpg");
-  }
-}
-
-.copyright {
-  position: relative;
-  color: #fff;
+  background-color: $dark-blue;
+  border-radius: 3px;
+  margin: 3rem auto auto auto;
+  padding: 4rem 1rem;
+  height: auto;
+  width: 100%;
+  color: $light1-blue;
   font-size: 1.2rem;
-  z-index: 4;
-  margin: 5% auto 5rem auto;
-  text-align: center;
-  flex: 0;
-  width: 80%;
-  max-width: 60rem;
+  position: relative;
 
   @include respond(l-phone) {
-    margin: 0 auto 5rem auto;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    align-self: flex-start;
+
+    @include respond(l-phone) {
+      margin-bottom: 1rem;
+    }
+    @include respond(sm-phone) {
+      font-size: 1.2rem;
+      letter-spacing: .5px;
+    }
+  }
+
+  .footer-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+
+    & > * {
+      margin-bottom: 2rem;
+      color: $light1-blue;
+    }
+    ul {
+      list-style-type: none;
+
+    }
+    li {
+      margin-bottom: 2px;
+      @include respond(xs-phone) {
+        font-size: 1rem;
+      }
+    }
+    a {
+      color: $light1-blue;
+      text-decoration: none;
+      position: relative;
+      @include linkHover;
+    }
+  }
+  .disclaimer {
+    width: 75%;
+    font-size: 1.3rem;
+    margin: 3rem auto;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      @include linkHover;
+    }
+
+    @include respond(m-phone) {
+      font-size: 8px;
+      width: 80%;
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: 1.3rem;
+    color: darken($light1-blue, 6%);
+  }
+
+  &__line {
+    width: 66.6%;
+    margin: 0 auto;
+    border-top: .5px solid $grey-blue;
   }
 }
+
+
+
+
+

@@ -1,0 +1,41 @@
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15%;
+
+  &__text {
+    font-family: $avenir;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 32rem;
+    margin: 0 10%;
+    line-height: 1.4;
+  }
+}
+
+.highlight {
+  padding: 2px 3px;
+
+  &--1{
+    background: $blue-mid-2;
+  }
+  &--2 {
+    background: $blue-mid-3;
+  }
+  &--3 {
+    background: $yellow;
+  }
+  &--4 {
+    background: $dark-blue;
+    color: #fff;
+    padding: 3px 4px;
+  }
+}
+
+.block {
+
+  &--1 {
+
+  }
+}
