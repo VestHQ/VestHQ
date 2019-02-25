@@ -53,110 +53,36 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="full-screen">
   <div class="nav">
-    <a href="https://vesthq.com/"><img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo"></a>
+    <a href="" class="nav__link">
+        <img src="../assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
+    </a>
 
-    <a href="/team" class="nav__team">Our Team</a>
-
-    <a class="typeform-share button nav__contact"  href="https://sierramoore.typeform.com/to/if9Lis" data-mode="drawer_left"  target="_blank">Contact Us</a>
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-
+    <a href="/team" class="nav__item">About</a>
+    <a href="/" class="nav__item">Security</a>
+    <a href="/" class="nav__item nav__item--active">Features</a>
 </div>
 
 
-    <div class="shadow-line"></div>
+  <header class="header">
 
-  <div class="flex-container">
-    <header class="header">
-    <div class="header__text-box">
-        <h1 class="header__primary">Retirement is now Accessible</h1>
-        <div class="header__secondary">We combined cutting-edge behavioral economics
-            with smart portfolio management for plans that are designed to
-            <div class="rw-words">
-                <span>empower.</span>
-                <span>excite.</span>
-                <span>scale.</span>
-                <span>educate.</span>
-                <span>use.</span>
-                <span>enjoy.</span>
-            </div>
-        </div>
-        <h2 class="header__secondary">Sign up to get our latest updates:</h2>
+    <div class="block-container">
+        <img src="../assets/images/blocks/light-yellow-block.png" alt="" class="block__img block__img--1">
+        <img src="../assets/images/blocks/block-stack-light.png" alt="" class="block__img block__img--2">
+    </div>
 
+    <h1 class="header__primary">The Future of Retirement has Arrived!</h1>
+    <h2 class="header__secondary">Instant everything. Delightful experiences.
+    <br>
+    Personalized service.
+    </h2>
 
-        <form name="contact" class="header__input-box" onsubmit="toggleText()">
-            <input name="email" type="email" class="header__input" placeholder="hello@vesthq.com" id="email" required>
-            <label for="email" class="header__label">Email</label>
-            <button id="btn" class="header__input__btn" type="submit">Sign me up!</button>
-        </form>
-        <span class="shadow-line"></span>
-        <script async>
-            const scriptURL = "https://script.google.com/macros/s/AKfycbzOupp1wWClK_QhVvl40-3S8VQz-SRu_BFWGeQNaWm6XrlQzEI/exec";
-            const form = document.forms['contact'];
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-            });
-
-            const toggleText = () => {
-                const button = document.getElementById("btn");
-                button.innerText = "Thanks!"
-            }
-        </script>
+    <div class="block-center-container">
+        <img src="../assets/images/blocks/light-blue-block.png" alt="" class="block-center">
     </div>
 </header>
 
-  </div>
-
-  <div class="card-container">
-    
-<div class="card">
-    <div class="card--1">
-        <a href="http://harborhq.com" >
-            <h1 class="card__heading">
-                <img src="../assets/images/harbor_logo.png" alt="Harbor" class="card__icon">
-            </h1>
-            <h2 class="card__mid">
-                Full-service 401(k) for small companies
-            </h2>
-            <p class="card__bottom">Learn more</p>
-        </a>
-    </div>
-</div>
-
-<div class="card2">
-    <div class="card2__side card2__side--front card--2">
-        <a href="#" >
-            <h1 class="card__heading">
-                <img src="../assets/images/logo_anchor_text.png" alt="Anchor" class="card__icon">
-            </h1>
-            <h2 class="card__mid">
-                Demystifying fiduciary responsibilities
-            </h2>
-            <p class="card__bottom">Coming soon</p>
-        </a>
-    </div>
-
-    <div class="card2__side card2__side--back">
-        <p class="card2__text">Fiduciary regulations are complicated. We help you navigate through the maze by explaining: <br> What is a fiduciary? <br> How can fiduciary responsibilities be met and liabilities avoided? <br> Do the services help companies and protect employees?</p>
-    </div>
-</div>
-
-
-
-
-
-  </div>
-  <div class="spacer">.</div>
-  <div class="copyright">
-   Vest, Inc.  &copy; <div id="js-year" style="color: #fff; display: inline-block"></div>
-    <br>
-    VestHQ, LLC is an investment advisor registered with the Securities and Exchange Commission. Consider the investment objectives, risks, and charges and expenses of funds recommended by VestHQ carefully before investing.  VestHQ does not provide tax, legal or accounting advice.
-</div>
-<footer class="footer"></footer>
 </div>
 
 <script

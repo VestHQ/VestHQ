@@ -1,193 +1,20 @@
 .header {
-  margin: 1.5rem auto;
+  font-family: $avenir;
   color: $dark-blue;
   z-index: 1;
-
-  @include respond(phone) {
-    width: 100vw;
-  }
-
-
-  & > * {
-    font-family: 'Avenir Next', $avenir;
-    margin-left: 25%;
-
-    @include respond(phone) {
-      width: 86%;
-      margin-left: 6%;
-    }
-    @include respond(mid-phone) {
-      width: 83%;
-    }
-  }
-
-  &__text-box {
-    text-align: center;
-    margin: 0 auto;
-  }
+  text-align: center;
 
   &__primary {
-    display: inline-block;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1px;
-    margin-bottom: .5rem;
-
-    @include respond(phone) {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      width: 100%;
-    }
-
+    margin: 25vh auto 10vh auto;
   }
 
   &__secondary {
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 0 auto 1.6rem auto;
-    text-align: center;
-    width: 50vw;
-
-    @include respond(phone) {
-      font-size: 1.5rem;
-      width: 70vw;
-    }
+    font-weight: 300;
+    font-size: 3rem;
   }
-
-  &__input-box {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__input {
-    width: 20rem;
-    height: 4rem;
-    font-size: 1.6rem;
-    margin-left: 5rem;
-    //box-shadow: 0 1rem 1rem rgba($dark-blue, 0.1);
-    text-align: center;
-
-    border: 1px solid grey;
-    transition: all .5s;
-    padding: 1.5rem 2rem;
-
-    &:focus {
-      outline: none;
-      box-shadow: 0 1.5rem 4rem rgba($dark-blue, .10);
-    }
-
-    @include respond(phone) {
-      width: 15rem;
-      text-align: left;
-      font-size: 1.4rem;
-    }
-
-    &__btn {
-      font-size: 1.6rem;
-      padding: 0 1rem;
-      border: none;
-      border-radius: 2px;
-      background-color: $bright-blue;
-      color: white;
-      font-family: $avenir;
-      height: 4rem;
-      width: 12rem;
-
-      &:focus {
-        outline: none;
-        box-shadow: 0 1.5rem 4rem rgba($dark-blue, .10);
-      }
-
-      @include respond(mid-phone) {
-        font-size: 1.4rem;
-      }
-
-      @include respond(phone) {
-        width: 9rem;
-        font-size: 1.2rem;
-      }
-
-      @include respond (small-phone) {
-        margin-left: 1rem;
-      }
-
-      &:hover {
-        background-color: $bright-blue-hover;
-      }
-    }
-  }
-
-  &__label {
-    color: transparent;
-  }
-}
-
-.header {
-  @media screen and (min-width: 600px) {
-    &__label {
-      color: $dark-blue;
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-left: 2rem;
-      margin-top: .7rem;
-      transition: all .3s;
-      transform: translate(-21rem, 4rem);
-    }
-    &__input:placeholder-shown + &__label {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
-}
-
-//.shadow-line {
-//  @include respond(phone) {
-//    box-shadow: 0 8px 8px -6px rgba(black, .1);
-//  }
-//}
-//////////
-
-
-.rw-words{
-  display: inline;
-  text-align: left;
-  text-indent: 0.3em;
-  color: $dark-blue;
-}
-span{
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-}
-.rw-words span{
-  animation: changeWords 18s ease-out infinite;
-
-  &:nth-child(2){
-    animation-delay: 3s;
-  }
-  &:nth-child(3) {
-    animation-delay: 6s;
-  }
-  &:nth-child(4){
-    animation-delay: 9s;
-  }
-  &:nth-child(5) {
-    animation-delay: 12s;
-  }
-  &:nth-child(6) {
-    animation-delay: 15s;
-  }
-}
-
-@keyframes changeWords{
-  0% { opacity: 0; }
-  2% { opacity: 0; -webkit-transform: translateY(-30px); }
-  5% { opacity: 1; -webkit-transform: translateY(0px);}
-  17% { opacity: 1; -webkit-transform: translateY(0px); }
-  20% { opacity: 0; -webkit-transform: translateY(30px); }
-  80% { opacity: 0; }
-  100% { opacity: 0; }
 }
 
 

@@ -20,9 +20,9 @@ google_analytics: UA-72011621-1
 
 plugins:
   - jekyll-sitemap
-  - jekyll-autoprefixer
-  - jekyll-redirect-from
+#  - jekyll-autoprefixer
+#  - jekyll-redirect-from
 
-autoprefixer:
-  browsers:
-    - last 10 versions
+#autoprefixer:
+#  browsers:
+#    - last 10 versions
