@@ -13,6 +13,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 <meta name="google-site-verification" content="3TMNrln3e_YxgDNI896r5_k4mZ9lnvyZ69oxvnMuuBc" />
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <!-- Hotjar Tracking Code for https://vesthq.com/ -->
 <!--<script>-->
     <!--(function(h,o,t,j,a,r){-->
@@ -65,7 +69,7 @@
 </div>
 
 
-  <header class="header">
+  <header class="header" data-aos="zoom-in">
 
     <div class="block-container">
         <img src="../assets/images/blocks/light-yellow-block.png" alt="" class="block__img block__img--1">
@@ -82,27 +86,33 @@
         <img src="../assets/images/blocks/light-blue-block.png" alt="" class="block-center">
     </div>
 </header>
+</div>
   <h3 class="header-tertiary">Retirement is changing...</h3>
 
 <section class="feature">
     <h3 class="feature__text">... for millions of <span class="highlight highlight--1">people</span> relying on 401(k) plans, we're unlocking the power of saving.</h3>
 
-    <img src="../assets/images/blocks/block-1.png" alt="" class="block block--1">
+    <div class="sticky">
+        <img src="../assets/images/blocks/block-1.png" alt="" id="block--1" class="block block--1">
+    </div>
+
 </section>
   <section class="feature">
     <h3 class="feature__text">... for <span class="highlight highlight--2">employers</span>, managing the dynamic administration of plans can be a hassle.</h3>
 
-    <img src="../assets/images/blocks/block-2.png" alt="" class="block block--1">
+    <div class="sticky">
+        <img src="../assets/images/blocks/block-2.png" alt="" class="block block--2" data-aos="fade-up">
+    </div>
 </section>
   <section class="feature">
     <h3 class="feature__text">... for <span class="highlight highlight--3">providers</span>, discovering new, smarter ways to leverage technology.</h3>
 
-    <img src="../assets/images/blocks/block-3.png" alt="" class="block block--3">
+    <img src="../assets/images/blocks/block-3.png" alt="" class="block block--3" data-aos="fade-up">
 </section>
   <section class="feature">
     <h3 class="feature__text"><span class="highlight highlight--4">Harbor</span> connects all of this together. Our platform has the power to seamlessly and intelligently connect up banking apps and financial products and services, to create new finance experiences for everyone. The result is higher participation rates, higher savings rates, and referral rates.</h3>
 
-    <img src="../assets/images/blocks/block-harbor.png" alt="" class="block block--1">
+    <img src="../assets/images/blocks/block-harbor.png" alt="" class="block block--4">
 </section>
   <footer class="footer">
     <section class="footer-group">
@@ -149,8 +159,6 @@
 
 
 
-</div>
-
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -188,6 +196,9 @@
 
     // slow down video speed
     // document.querySelector('video').playbackRate = 0.3;
+
+    AOS.init();
+
 </script>
 
 

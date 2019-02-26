@@ -5,7 +5,7 @@
   text-align: center;
 
   &__primary {
-    font-size: 4rem;
+    font-size: 4.4rem;
     font-weight: 900;
     letter-spacing: 1px;
     margin: 25vh auto 10vh auto;
@@ -13,16 +13,22 @@
 
   &__secondary {
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
 }
 
 .header-tertiary {
-  font-family: $avenir;
+  font-family: $inter-bold;
   color: $dark-blue;
   font-weight: 900;
-  font-size: 3rem;
-  margin: 5rem 0 15rem 10%;
+  font-size: 3.5rem;
+  margin: 5rem 0 5rem 10%;
+
+  padding: 4rem 0;
+  width: 45%;
+  background-image: linear-gradient(to bottom, #fff 66%, transparent);
+  position: sticky;
+  top: 0;
 }
 
 

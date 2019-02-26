@@ -1,16 +1,24 @@
 .feature {
+  font-family: $inter-bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15%;
+  height: 75rem;
+
+  position: sticky;
+  top: 0;
 
   &__text {
     font-family: $avenir;
     font-weight: 400;
-    font-size: 2rem;
-    width: 32rem;
+    font-size: 2.4rem;
+    min-width: 30rem;
+    width: 45%;
     margin: 0 10%;
     line-height: 1.4;
+
+    background: #fff;
+    padding: 2rem;
   }
 }
 
@@ -34,8 +42,43 @@
 }
 
 .block {
+  width: auto;
+  height: 30rem;
+  margin: 2rem 0;
+  //position: sticky;
+  //top: 0;
+  //margin-bottom: 3rem;
+
+
 
   &--1 {
-
+    margin-bottom: 3rem;
+    //padding-bottom: 3rem;
+    z-index: 11;
+    //position: relative;
   }
+  &--2 {
+    margin-bottom: 3rem;
+    z-index: 10;
+    //top: 4rem;
+    //position: relative;
+  }
+  &--3 {
+    margin-bottom: 3rem;
+    z-index: 9;
+    //top: 8rem;
+    //position: relative;
+  }
+  &--4 {
+    margin-bottom: 3rem;
+    z-index: -3;
+    //top: 12rem;
+    //position: relative;
+  }
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
