@@ -58,15 +58,18 @@
 <body>
 
 <div class="full-screen">
-  <div class="nav">
-    <a href="" class="nav__link">
-        <img src="/assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
-    </a>
+  <header class="header-container">
+    <nav class="nav">
+        <a href="" class="nav__link">
+            <img src="/assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
+        </a>
 
-    <a href="/team" class="nav__item">About</a>
-    <a href="/" class="nav__item">Security</a>
-    <a href="/" class="nav__item nav__item--active">Features</a>
-</div>
+        <a href="/team" class="nav__item">About</a>
+        <a href="/" class="nav__item">Security</a>
+        <a href="/" class="nav__item nav__item--active">Features</a>
+    </nav>
+</header>
+
 
 
   <header class="header" data-aos="zoom-in">
@@ -174,7 +177,17 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+
+  <script src="https://npmcdn.com/headroom.js@0.9.4/dist/headroom.min.js"></script>
+
 <script async>
+    //////////// HEADROOM navbar hide on scroll down and show on scroll up //////
+
+
+    // $(".nav").headroom();
+    const nav = document.querySelector("nav");
+    const headroom  = new Headroom(nav);
+    headroom.init();
 
     // <!-- Google Analytics -->
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -211,7 +224,11 @@
     AOS.init();
 
     const block1 = document.getElementsByClassName('block--1');
-    console.log(block1)
+    // console.log(block1)
+
+
+
+
 
 </script>
 
