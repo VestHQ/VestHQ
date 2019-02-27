@@ -3,23 +3,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75rem;
+  height: 33rem;
 
-  position: sticky;
-  top: 0;
+  //position: sticky;
+  //top: 0;
+
+
+  margin-bottom: 15%;
 
   &__text {
-    font-family: $avenir;
+    font-family: $inter-light;
     font-weight: 400;
     font-size: 2.4rem;
-    min-width: 30rem;
-    width: 45%;
-    margin: 0 10%;
+    //min-width: 30rem;
+    //width: 45%;
+    //margin: 0 10%;
     line-height: 1.4;
-
+    z-index: -1;
     background: #fff;
-    padding: 2rem;
+
+    position: static !important;
   }
+}
+
+.feature-content {
+  width: 45%;
+  margin: 0 10%;
+  min-width: 30rem;
+
+  //position: static !important;
+  //position: sticky;
+  top: auto;
+  z-index: -1;
+}
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .highlight {
@@ -44,41 +63,25 @@
 .block {
   width: auto;
   height: 30rem;
-  margin: 2rem 0;
-  //position: sticky;
-  //top: 0;
-  //margin-bottom: 3rem;
+  margin: 2rem;
 
-
+  position: relative;
 
   &--1 {
-    margin-bottom: 3rem;
-    //padding-bottom: 3rem;
-    z-index: 11;
-    //position: relative;
+    z-index: 10;
   }
   &--2 {
-    margin-bottom: 3rem;
-    z-index: 10;
-    //top: 4rem;
-    //position: relative;
+    z-index: 9;
+    top: 9rem;
   }
   &--3 {
-    margin-bottom: 3rem;
-    z-index: 9;
-    //top: 8rem;
-    //position: relative;
+    top: 24rem;
+    width: 55rem;
   }
   &--4 {
-    margin-bottom: 3rem;
-    z-index: -3;
-    //top: 12rem;
-    //position: relative;
+    z-index: 7;
+    top: 8.5rem;
   }
 }
 
 
-.sticky {
-  position: sticky;
-  top: 0;
-}

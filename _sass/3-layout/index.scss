@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  z-index: -1;
 
   &__img {
 
@@ -21,8 +22,13 @@
 .block-center-container {
   display: flex;
   justify-content: center;
+  position: relative;
 
   .block-center {
-
+    z-index: -1;
+    position: absolute;
+    left: 50%; right: 50%;
+    transform: translate(-50%, -50%);
+    top: 2.6rem;
   }
 }

@@ -6,6 +6,13 @@
   }
 }
 
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
     @media (max-width: 25em) { @content } //320px

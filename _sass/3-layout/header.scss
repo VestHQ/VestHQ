@@ -1,7 +1,6 @@
 .header {
-  font-family: $avenir;
+  font-family: $inter-bold;
   color: $dark-blue;
-  z-index: 1;
   text-align: center;
 
   &__primary {
@@ -12,6 +11,7 @@
   }
 
   &__secondary {
+    font-family: $inter-light;
     font-weight: 300;
     font-size: 3.4rem;
   }
@@ -26,9 +26,10 @@
 
   padding: 4rem 0;
   width: 45%;
-  background-image: linear-gradient(to bottom, #fff 66%, transparent);
+  background-image: linear-gradient(to bottom, #fff 69%, transparent);
   position: sticky;
   top: 0;
+  z-index: 11;
 }
 
 

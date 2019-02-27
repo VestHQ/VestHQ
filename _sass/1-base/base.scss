@@ -25,8 +25,8 @@ html {
 
 body{
   box-sizing: border-box;
-  font-family: 'Avenir Next', $avenir;
-  //max-width: $max-page-width;
+  font-family: $inter-bold, $avenir;
+  max-width: $max-page-width;
   overflow-x: hidden;
   background-color: #fff;
   margin: 0 auto;
