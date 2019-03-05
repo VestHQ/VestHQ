@@ -27,7 +27,7 @@
     @media (max-width: 43.125em) { @content } //690px
   }
   @if $breakpoint == ipad {
-    @media (max-width: 48em) { @content } //768px
+    @media (max-width: 800px) { @content } //800px
   }
   @if $breakpoint == tab-port {
     @media (max-width: 56em) { @content } //900px

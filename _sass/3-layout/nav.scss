@@ -4,7 +4,7 @@
 
   min-width: 100vw;
   z-index: 999;
-  //background: #fff;
+  background: transparent;
   //opacity: .98;
   //box-shadow: 0 -4px 30px 0 rgba(0,0,0,.1);
 }
@@ -65,6 +65,7 @@
 
   //min-width: 100vw;
   background: #fff;
+  opacity: .98;
   //box-shadow: 0 -4px 30px 0 rgba(0,0,0,.1);
 }
 .headroom--pinned {
