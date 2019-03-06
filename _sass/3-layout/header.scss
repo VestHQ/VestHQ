@@ -1,20 +1,41 @@
 .header {
-  margin-top: 9rem;
+  margin-top: $header-margin;
   font-family: $inter-bold;
   color: $dark-blue;
   text-align: center;
+  position: relative;
+
+  @include center;
 
   &__primary {
     font-size: 4.4rem;
     font-weight: 900;
     letter-spacing: 1px;
-    margin: 25vh auto 10vh auto;
+    margin: 33vh auto 10vh auto;
+
+    @include respond(tab-port) {
+      margin: 25vh auto 6vh auto;
+      font-size: 4rem;
+    }
+    @include respond(l-phone) {
+      font-size: 3.5rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 
   &__secondary {
     font-family: $inter-light;
     font-weight: 300;
     font-size: 3.4rem;
+
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+    }
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
   }
 }
 

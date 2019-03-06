@@ -25,6 +25,10 @@
 
   & > * {
     margin: 0 2rem;
+
+    @include respond(phone) {
+      margin: 0 1rem;
+    }
   }
 
   &__link {
@@ -41,6 +45,14 @@
 
     padding: 1rem 1.5rem;
 
+    @include respond(l-phone) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(mid-phone) {
+      font-size: 1.6rem;
+    }
+
     &:hover,
     &:focus,
     &:active,
@@ -53,8 +65,11 @@
     height: 4.4rem;
     width: auto;
 
-    @include respond(phone) {
-      height: 2rem;
+    @include respond(l-phone) {
+      height: 3.2rem;
+    }
+    @include respond(mid-phone) {
+      height: 2.6rem;
     }
   }
 }

@@ -24,7 +24,7 @@
     @media (max-width: 37.5em) { @content } //600px
   }
   @if $breakpoint == l-phone {
-    @media (max-width: 43.125em) { @content } //690px
+    @media (max-width: 700px) { @content } //700px
   }
   @if $breakpoint == ipad {
     @media (max-width: 800px) { @content } //800px
@@ -62,4 +62,13 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+}
+
+@mixin center {
+  //position: absolute;
+  //top: 25%;
+  //left: 0; right: 0;
+  //transform: translate(-25%, -25%);
+  //transform: translate(-50%, -50%);
+  //width: 100%;
 }
