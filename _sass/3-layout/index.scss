@@ -9,7 +9,6 @@
 
   &__img {
 
-
     &--1{
       width: 25rem;
       margin-left: 8%;
@@ -34,6 +33,7 @@
       }
       @include respond(l-phone) {
         width: 25rem;
+        margin-top: 12%;
       }
       @include respond(m-phone) {
         width: 20rem;

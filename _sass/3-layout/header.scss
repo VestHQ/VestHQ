@@ -1,24 +1,27 @@
 .header {
-  margin-top: $header-margin;
   font-family: $inter-bold;
   color: $dark-blue;
   text-align: center;
   position: relative;
+  top: 15vh;
+  bottom: 50vh;
+  transform: translate(-50%, -50%);
 
-  @include center;
+  //margin: 25vh auto 10vh auto;
 
   &__primary {
     font-size: 4.4rem;
     font-weight: 900;
     letter-spacing: 1px;
-    margin: 33vh auto 10vh auto;
+    margin: 30vh auto 6vh auto;
 
     @include respond(tab-port) {
-      margin: 25vh auto 6vh auto;
       font-size: 4rem;
+      margin: 25vh auto 6vh auto;
     }
     @include respond(l-phone) {
       font-size: 3.5rem;
+      margin: 21vh auto 6vh auto;
     }
     @include respond(phone) {
       font-size: 3rem;
@@ -55,7 +58,7 @@
 
   padding: 4rem 0;
   width: 45%;
-  background-image: linear-gradient(to bottom, #fff 69%, transparent);
+  background-image: linear-gradient(to bottom, #fff 69%, rgba(#fff, .2));
   position: sticky;
   top: 0;
   z-index: 5;

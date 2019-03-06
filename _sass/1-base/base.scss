@@ -38,7 +38,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0 auto;
+  //margin: 0 auto;
   max-width: $max-page-width;
   position: relative;
 }
@@ -53,8 +53,11 @@ body{
 }
 
 
-
-
+// make not draggable, highlightable, selectable
+img {
+  pointer-events: none;
+  user-select: none;
+}
 
 
 
