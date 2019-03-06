@@ -1,68 +1,88 @@
-.block-container {
-  display: flex;
-  width: 95%;
-  max-width: 100vw;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  z-index: -1;
-
-  &__img {
-
-    &--1{
-      width: 25rem;
-      margin-left: 8%;
-      margin-top: 0;
-
-      @include respond(tab-port) {
-        width: 20rem;
-      }
-      @include respond(l-phone) {
-        width: 15rem;
-      }
-      @include respond(m-phone) {
-        width: 10rem;
-      }
-    }
-    &--2 {
-      width: 35rem;
-      margin-top: 8%;
-
-      @include respond(tab-port) {
-        width: 30rem;
-      }
-      @include respond(l-phone) {
-        width: 25rem;
-        margin-top: 12%;
-      }
-      @include respond(m-phone) {
-        width: 20rem;
-      }
-    }
-  }
+.index {
+  //background-image: url("../../assets/images/index_bg.png");
+  //width: 100vw;
+  //height: 100vh;
+  //max-width: $max-page-width;
+  //margin: 0 auto;
 }
 
-.block-center-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
 
-  .block-center {
-    z-index: -1;
-    position: absolute;
-    left: 50%; right: 50%;
-    transform: translate(-50%, -50%);
-    top: .6rem;
-    width: 30rem;
 
-    @include respond(tab-port) {
-      width: 25rem;
-    }
-    @include respond(l-phone) {
-      width: 20rem;
-    }
-    @include respond(m-phone) {
-      width: 15rem;
-    }
-  }
-}
+
+
+
+
+
+
+
+
+
+
+//.block-container {
+//  display: flex;
+//  width: 95%;
+//  max-width: 100vw;
+//  justify-content: space-between;
+//  align-items: center;
+//  position: absolute;
+//  z-index: -1;
+//
+//  &__img {
+//
+//    &--1{
+//      width: 25rem;
+//      margin-left: 8%;
+//      margin-top: 0;
+//
+//      @include respond(tab-port) {
+//        width: 20rem;
+//      }
+//      @include respond(l-phone) {
+//        width: 15rem;
+//      }
+//      @include respond(m-phone) {
+//        width: 10rem;
+//      }
+//    }
+//    &--2 {
+//      width: 35rem;
+//      margin-top: 8%;
+//
+//      @include respond(tab-port) {
+//        width: 30rem;
+//      }
+//      @include respond(l-phone) {
+//        width: 25rem;
+//        margin-top: 12%;
+//      }
+//      @include respond(m-phone) {
+//        width: 20rem;
+//      }
+//    }
+//  }
+//}
+//
+//.block-center-container {
+//  display: flex;
+//  justify-content: center;
+//  position: relative;
+//
+//  .block-center {
+//    z-index: -1;
+//    position: absolute;
+//    left: 50%; right: 50%;
+//    transform: translate(-50%, -50%);
+//    top: .6rem;
+//    width: 30rem;
+//
+//    @include respond(tab-port) {
+//      width: 25rem;
+//    }
+//    @include respond(l-phone) {
+//      width: 20rem;
+//    }
+//    @include respond(m-phone) {
+//      width: 15rem;
+//    }
+//  }
+//}

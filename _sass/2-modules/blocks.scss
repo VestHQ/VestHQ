@@ -1,0 +1,165 @@
+.block-wrapper {
+  position: relative;
+  //display: grid;
+  //grid-template-rows: 1fr 1fr 1fr 1fr;
+  //grid-template-columns: 1fr;
+}
+
+.feature {
+  font-family: $inter-bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33rem;
+  width: 100%;
+
+  position: relative;
+  //position: sticky;
+  //top: 0;
+
+  margin-bottom: 15%;
+
+  &--yellow {
+    @extend .feature;
+    //max-height: 42rem;
+    height: 100%;
+    display: block;
+    background: $yellow;
+    //width: 95%;
+    padding: 3rem 0;
+  }
+
+  @include respond(ipad) {
+    margin-bottom: 10%;
+    min-width: 100vw;
+  }
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    font-family: $inter-regular;
+    font-weight: 400;
+    font-size: 2.4rem;
+    //min-width: 30rem;
+    //width: 45%;
+    //margin: 0 10%;
+    line-height: 1.4;
+    z-index: -1;
+    background: #fff;
+
+    &--yellow {
+      background: $yellow;
+      //width: 100%;
+    }
+
+    position: static !important;
+
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+    @include respond(m-phone) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.feature-content {
+  width: 45%;
+  margin: 0 10%;
+  //width: 30rem;
+
+  //position: static !important;
+  //position: sticky;
+  //top: auto;
+  z-index: -1;
+
+  @include respond(phone) {
+    margin: 0 1rem 0 7%;
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.highlight {
+  padding: 2px 3px;
+
+  &--1{
+    background: $blue-mid-2;
+  }
+  &--2 {
+    background: $blue-mid-3;
+  }
+  &--3 {
+    background: $yellow;
+  }
+  &--4 {
+    background: $dark-blue;
+    color: #fff;
+    padding: 3px 4px;
+  }
+}
+
+.block {
+  width: 40rem;
+  height: auto;
+  margin: 2rem;
+
+  //position: relative;
+
+  & > * {
+    margin-bottom: 2rem;
+  }
+
+  &--1 {
+    z-index: 10;
+  }
+  &--2 {
+    z-index: 9;
+    top: 9rem;
+  }
+  &--3 {
+    top: 28rem;
+
+    @include respond(phone) {
+      top: 22rem;
+    }
+  }
+  &--4 {
+    z-index: 8;
+    top: 1.5rem;
+    right: .7rem;
+
+    //@media screen and (min-width: 1200px) {
+    //  top: 11.5rem;
+    //}
+    //@include respond(ipad) {
+    //  top: 6.5rem;
+    //}
+    //@include respond(phone) {
+    //  top: -12.5rem;
+    //}
+
+  }
+
+  @include respond(ipad) {
+    width: 30rem;
+    margin: 0;
+  }
+  @include respond(l-phone) {
+    width: 25rem;
+  }
+  @include respond(phone) {
+    width: 20rem;
+  }
+  @include respond(m-phone) {
+    font-size: 15rem;
+  }
+}
+
+

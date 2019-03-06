@@ -1,16 +1,19 @@
 .footer {
-  font-family: $inter-semi-bold;
   flex-shrink: 0;
 
-  background-color: $dark-blue;
+  background-color: $blue-mid-2;
   border-radius: 3px;
   margin: 3rem auto auto auto;
   padding: 4rem 1rem;
   height: auto;
   width: 100%;
-  color: $light1-blue;
+  color: $dark-blue;
   font-size: 1.2rem;
   position: relative;
+
+  &__title {
+    font-family: $inter-semi-bold;
+  }
 
   @include respond(l-phone) {
     padding: 2rem;
@@ -34,7 +37,7 @@
   }
 
   .footer-group {
-    font-family: $inter-semi-bold;
+    font-family: $inter-regular;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -42,7 +45,7 @@
 
     & > * {
       margin-bottom: 2rem;
-      color: $light1-blue;
+      color: $dark-blue;
     }
     ul {
       list-style-type: none;
@@ -55,21 +58,21 @@
       }
     }
     a {
-      color: $light1-blue;
+      color: $dark-blue;
       text-decoration: none;
       position: relative;
       @include linkHover;
     }
   }
   .disclaimer {
-    font-family: $inter-semi-bold;
+    font-family: $inter-regular;
     width: 75%;
     font-size: 1.3rem;
     margin: 3rem auto;
 
     a {
       text-decoration: none;
-      color: inherit;
+      color: $dark-blue;
       position: relative;
       @include linkHover;
     }
@@ -80,9 +83,10 @@
     }
   }
   .copyright {
+    font-family: $inter-regular;
     text-align: center;
     font-size: 1.3rem;
-    color: darken($light1-blue, 6%);
+    color: $dark-blue;
   }
 
   &__line {

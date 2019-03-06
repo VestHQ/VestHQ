@@ -34,7 +34,6 @@
 
   &__secondary {
     font-family: $inter-light;
-    font-weight: 300;
     font-size: 3.4rem;
 
     @include respond(tab-port) {
@@ -50,10 +49,9 @@
 }
 
 .header-tertiary {
-  font-family: $inter-bold;
+  font-family: $inter-semi-bold;
   color: $dark-blue;
-  font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   margin: 5rem 0 5rem 10%;
 
   padding: 4rem 0;
@@ -71,4 +69,11 @@
   }
 }
 
-
+.header-harbor {
+  width: 45%;
+  font-family: $inter-semi-bold;
+  color: $dark-blue;
+  font-size: 3.3rem;
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}

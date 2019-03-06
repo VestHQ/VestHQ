@@ -25,7 +25,7 @@ html {
 
 body{
   box-sizing: border-box;
-  font-family: $inter-bold, $avenir;
+  font-family: $inter-regular, $avenir;
   max-width: $max-page-width;
   overflow-x: hidden;
   background-color: #fff;
@@ -38,9 +38,10 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  //margin: 0 auto;
+  margin: 0 auto;
   max-width: $max-page-width;
   position: relative;
+  background-image: url("../../assets/images/index_bg.png");
 }
 .spacer {
   flex: 1;
