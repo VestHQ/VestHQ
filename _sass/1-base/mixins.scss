@@ -17,6 +17,9 @@
   @if $breakpoint == small-phone {
     @media (max-width: 25em) { @content } //320px
   }
+  @if $breakpoint == m-phone {
+    @media (max-width: 400px) { @content } //400px
+  }
   @if $breakpoint == mid-phone {
     @media (max-width: 31.25em) { @content } //500px
   }

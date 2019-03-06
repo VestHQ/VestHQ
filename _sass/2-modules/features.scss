@@ -4,11 +4,20 @@
   justify-content: space-between;
   align-items: center;
   height: 33rem;
+  width: 100%;
 
   //position: sticky;
   //top: 0;
 
   margin-bottom: 15%;
+
+  @include respond(ipad) {
+    margin-bottom: 10%;
+    min-width: 100vw;
+  }
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
 
   &__text {
     font-family: $inter-light;
@@ -23,8 +32,14 @@
 
     position: static !important;
 
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
     @include respond(phone) {
       font-size: 1.8rem;
+    }
+    @include respond(m-phone) {
+      font-size: 1.6rem;
     }
   }
 }
@@ -39,8 +54,9 @@
   top: auto;
   z-index: -1;
 
+
   @include respond(phone) {
-    font-size: 1.8rem;
+    margin: 0 1rem 0 7%;
   }
 }
 .sticky {
@@ -107,6 +123,16 @@
 
   @include respond(ipad) {
     width: 30rem;
+    margin: 0;
+  }
+  @include respond(l-phone) {
+    width: 25rem;
+  }
+  @include respond(phone) {
+    width: 20rem;
+  }
+  @include respond(m-phone) {
+    font-size: 15rem;
   }
 }
 

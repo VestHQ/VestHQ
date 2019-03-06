@@ -21,6 +21,9 @@
       @include respond(l-phone) {
         width: 15rem;
       }
+      @include respond(m-phone) {
+        width: 10rem;
+      }
     }
     &--2 {
       width: 35rem;
@@ -31,6 +34,9 @@
       }
       @include respond(l-phone) {
         width: 25rem;
+      }
+      @include respond(m-phone) {
+        width: 20rem;
       }
     }
   }
@@ -54,6 +60,9 @@
     }
     @include respond(l-phone) {
       width: 20rem;
+    }
+    @include respond(m-phone) {
+      width: 15rem;
     }
   }
 }

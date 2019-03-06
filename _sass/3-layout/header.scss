@@ -23,6 +23,10 @@
     @include respond(phone) {
       font-size: 3rem;
     }
+    @include respond(m-phone) {
+      margin: 16vh auto 4vh auto;
+      font-size: 2.8rem;
+    }
   }
 
   &__secondary {
@@ -35,6 +39,9 @@
     }
     @include respond(phone) {
       font-size: 2.2rem;
+    }
+    @include respond(m-phone) {
+      font-size: 2rem;
     }
   }
 }
@@ -52,6 +59,13 @@
   position: sticky;
   top: 0;
   z-index: 5;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(l-phone) {
+    font-size: 2.7rem;
+  }
 }
 
 
