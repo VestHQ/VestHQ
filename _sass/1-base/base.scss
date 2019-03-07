@@ -25,13 +25,11 @@ html {
 
 body{
   box-sizing: border-box;
-  font-family: $inter-regular, $avenir;
-  max-width: $max-page-width;
+  font-family: $inter-regular;
+  //max-width: $max-page-width;
   overflow-x: hidden;
   background-color: #fff;
   margin: 0 auto;
-
-  //position: relative;
 }
 
 .full-screen {
@@ -45,7 +43,9 @@ body{
 
   &--features {
     @extend .full-screen;
+    width: 100vw;
     background-image: url("../../assets/images/features_bg.png");
+    margin-bottom: 4rem;
   }
 }
 .spacer {

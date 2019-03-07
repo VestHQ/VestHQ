@@ -20,7 +20,7 @@
   }
 
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
@@ -37,11 +37,13 @@
   }
 
   .footer-group {
+    max-width: $max-page-width;
+    margin: 0 auto;
     font-family: $inter-regular;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     & > * {
       margin-bottom: 2rem;
@@ -66,8 +68,9 @@
   }
   .disclaimer {
     font-family: $inter-regular;
+    max-width: 80rem;
     width: 75%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 3rem auto;
 
     a {

@@ -24,7 +24,9 @@
     max-height: 40rem;
 
     &--2 {
-      order: 1;
+      @include respond(phone) {
+        order: 1;
+      }
     }
   }
 }

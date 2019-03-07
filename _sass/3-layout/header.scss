@@ -10,17 +10,17 @@
   //margin: 25vh auto 10vh auto;
 
   &__primary {
-    font-size: 4.4rem;
+    font-size: 4.2rem;
     font-weight: 900;
     letter-spacing: 1px;
     margin: 30vh auto 6vh auto;
 
     @include respond(tab-port) {
-      font-size: 4rem;
+      font-size: 3.8rem;
       margin: 25vh auto 6vh auto;
     }
     @include respond(l-phone) {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       margin: 21vh auto 6vh auto;
     }
     @include respond(phone) {
@@ -34,16 +34,21 @@
 
   &__secondary {
     font-family: $inter-light;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
 
     @include respond(tab-port) {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
     }
     @include respond(phone) {
       font-size: 2.2rem;
     }
     @include respond(m-phone) {
       font-size: 2rem;
+    }
+
+    &--feature {
+      width: 66%;
+      margin: 0 auto;
     }
   }
 }
