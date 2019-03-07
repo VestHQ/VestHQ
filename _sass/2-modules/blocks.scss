@@ -5,7 +5,7 @@
   //grid-template-columns: 1fr;
 }
 
-.feature {
+.block-section {
   font-family: $inter-bold;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   margin-bottom: 15%;
 
   &--yellow {
-    @extend .feature;
+    @extend .block-section;
     //max-height: 42rem;
     height: 100%;
     display: block;
@@ -67,7 +67,7 @@
   }
 }
 
-.feature-content {
+.block-content {
   width: 45%;
   margin: 0 10%;
   //width: 30rem;

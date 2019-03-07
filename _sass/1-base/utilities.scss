@@ -3,6 +3,8 @@
 .md-mg-left { margin-left: 4rem !important;}
 .sm-mg-left { margin-left: 2rem !important;}
 
+.mg-btm-lg { margin-bottom: 15% !important;}
+
 //test
 .color-white { color: #fff !important;}
 .border-white { border: 2px solid #fff !important;}
@@ -12,6 +14,20 @@
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.u-feature-width {
+  width: 80%;
 }

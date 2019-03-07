@@ -42,6 +42,11 @@ body{
   max-width: $max-page-width;
   position: relative;
   background-image: url("../../assets/images/index_bg.png");
+
+  &--features {
+    @extend .full-screen;
+    background-image: url("../../assets/images/features_bg.png");
+  }
 }
 .spacer {
   flex: 1;

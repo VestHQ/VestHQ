@@ -1,0 +1,30 @@
+.feature {
+  //display: grid;
+  //grid-auto-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+  width: 100vw;
+  max-width: $max-page-width;
+  margin: 8% auto;
+
+  &__title {
+    color: $dark-blue;
+    font-family: $inter-bold;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 1.6rem;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__img {
+    width: auto;
+    max-width: 35rem;
+    max-height: 40rem;
+
+    &--2 {
+      order: 1;
+    }
+  }
+}
