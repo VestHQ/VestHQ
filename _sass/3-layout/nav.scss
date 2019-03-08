@@ -75,6 +75,7 @@
   &__logo {
     height: 3.2rem;
     width: auto;
+    margin: 0 1.5rem;
 
     @include respond(mid-phone) {
       height: 2.6rem;

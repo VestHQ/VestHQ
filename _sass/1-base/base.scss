@@ -36,17 +36,24 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   max-width: $max-page-width;
   position: relative;
-  background-image: url("../../assets/images/index_bg.png");
+  background: url("../../assets/images/index_bg.png") no-repeat center center fixed;
+  background-size: cover;
 
   &--features {
     @extend .full-screen;
-    width: 100vw;
-    background-image: url("../../assets/images/features_bg.png");
+    //width: 100vw;
+    background: url("../../assets/images/features_bg.png");
     margin-bottom: 4rem;
+
+    @include respond(phone) {
+      background-position: right;
+    }
   }
+
 }
 .spacer {
   flex: 1;
@@ -64,6 +71,5 @@ img {
   pointer-events: none;
   user-select: none;
 }
-
 
 
