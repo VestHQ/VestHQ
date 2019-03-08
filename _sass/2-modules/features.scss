@@ -21,7 +21,12 @@
   &__img {
     width: auto;
     max-width: 35rem;
+    height: 35rem;
     max-height: 40rem;
+
+    &--1 {
+
+    }
 
     &--2 {
       @include respond(phone) {

@@ -15,12 +15,16 @@
 .flex {
   display: flex;
   justify-content: space-around;
-  //align-items: center;
+  align-items: center;
   width: 100%;
 
   @include respond(phone) {
     flex-direction: column;
   }
+}
+.flex-harbor {
+  display: flex;
+  align-items: flex-start;
 }
 .flex-col {
   display: flex;

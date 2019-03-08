@@ -40,7 +40,7 @@ body{
   margin: 0 auto;
   max-width: $max-page-width;
   position: relative;
-  background: url("../../assets/images/index_bg.png") no-repeat center center fixed;
+  background: url("../../assets/images/index_bg.png");
   background-size: cover;
 
   &--features {
