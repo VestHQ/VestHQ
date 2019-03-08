@@ -1,0 +1,53 @@
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 45rem;
+  color: $dark-blue;
+  margin-bottom: 15rem;
+
+
+  .info-block {
+    background-color: $blue-mid-2;
+    width: 30rem;
+    padding: 4rem 2rem;
+    margin: 3rem;
+
+    position: relative;
+
+    &--about {
+      align-self: flex-end;
+    }
+    &--feature {
+      align-self: flex-start;
+    }
+
+    &__title {
+      font-family: $inter-bold;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    &__text {
+      font-family: $inter-regular;
+      font-size: 1.4rem;
+    }
+
+    &::before {
+      content: '';
+      background-color: $blue-mid-3;
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      right: 1.5rem;
+      top: -1.5rem;
+      z-index: -1;
+      transition: all 200ms ease 0s;
+    }
+    &:hover::before {
+      right: 0;
+      top: 0;
+    }
+  }
+}

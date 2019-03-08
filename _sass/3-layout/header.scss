@@ -57,14 +57,14 @@
   font-family: $inter-semi-bold;
   color: $dark-blue;
   font-size: 3.3rem;
-  margin: 5rem 0 5rem 10%;
+  margin: 5rem 0 0 10%;
 
   padding: 4rem 0;
   width: 45%;
   background-image: linear-gradient(to bottom, #fff 69%, rgba(#fff, .2));
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 12;
 
   @include respond(tab-port) {
     font-size: 3rem;
@@ -81,4 +81,5 @@
   font-size: 3.3rem;
   margin-left: 10%;
   margin-bottom: 2rem;
+  line-height: 1.3;
 }

@@ -10,10 +10,9 @@
 }
 .nav{
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   font-family: $inter-light;
   max-width: $max-page-width;
-
   padding-top: 3.5rem;
   padding-bottom: 1rem;
 
@@ -25,6 +24,7 @@
 
   & > * {
     margin: 0 2rem;
+    max-width: $max-page-width;
 
     @include respond(mid-phone) {
       margin: 0 1rem;
@@ -87,12 +87,13 @@
   transition: transform 200ms linear;
 
   //min-width: 100vw;
-  //background: #fff;
   //opacity: .98;
   //box-shadow: 0 -4px 30px 0 rgba(0,0,0,.1);
 }
 .headroom--pinned {
   transform: translateY(0%);
+  background: #fff;
+
 }
 .headroom--unpinned {
   transform: translateY(-100%);

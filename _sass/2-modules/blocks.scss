@@ -1,5 +1,7 @@
 .block-wrapper {
   position: relative;
+  max-width: $max-page-width;
+  margin: 0 auto;
   //display: grid;
   //grid-template-rows: 1fr 1fr 1fr 1fr;
   //grid-template-columns: 1fr;
@@ -23,10 +25,13 @@
     @extend .block-section;
     //max-height: 42rem;
     height: 100%;
+    width: 90%;
     display: block;
     background: $yellow;
-    //width: 95%;
     padding: 3rem 0;
+    margin-left: 1rem;
+
+    z-index: 14;
   }
 
   @include respond(ipad) {
@@ -82,8 +87,8 @@
   }
 }
 .sticky {
-  position: sticky;
-  top: 0;
+  //position: sticky;
+  //top: 0;
 }
 
 .highlight {
@@ -109,6 +114,9 @@
   width: 40rem;
   height: auto;
   margin: 2rem;
+
+  position: sticky;
+  top: 0;
 
   //position: relative;
 

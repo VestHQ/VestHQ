@@ -19,22 +19,6 @@
     padding: 2rem;
   }
 
-  &__title {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-    align-self: flex-start;
-
-    @include respond(l-phone) {
-      margin-bottom: 1rem;
-    }
-    @include respond(sm-phone) {
-      font-size: 1.2rem;
-      letter-spacing: .5px;
-    }
-  }
 
   .footer-group {
     max-width: $max-page-width;
@@ -43,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 
     & > * {
       margin-bottom: 2rem;
@@ -88,7 +72,7 @@
   .copyright {
     font-family: $inter-regular;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: $dark-blue;
   }
 
