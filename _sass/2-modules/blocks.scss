@@ -30,8 +30,7 @@
     background: $yellow;
     padding: 3rem 0;
     margin-left: 1rem;
-
-    z-index: 14;
+    //z-index: -1;
   }
 
   @include respond(ipad) {
@@ -72,11 +71,12 @@
 .block-content {
   width: 45%;
   margin: 0 10%;
-  //width: 30rem;
+  max-width: 50rem;
+  height: 100%;
 
   //position: static !important;
   //position: sticky;
-  //top: auto;
+  top: 100px;
   z-index: -1;
 
   @include respond(phone) {
@@ -84,8 +84,8 @@
   }
 }
 .sticky {
-  //position: sticky;
-  //top: 0;
+  position: sticky;
+  top: 0;
 }
 
 .highlight {
@@ -100,22 +100,18 @@
   &--3 {
     background: $yellow;
   }
-  &--4 {
-    background: $dark-blue;
-    color: #fff;
-  }
 }
 
 .block {
   width: 40rem;
   height: auto;
-  margin: 2rem;
+  //margin: 2rem;
 
-  position: sticky;
-  top: 0;
-  z-index: 11;
+  //position: sticky;
+  //top: -300px;
+  //z-index: 11;
 
-  //position: relative;
+  position: relative;
 
   & > * {
     margin-bottom: 2rem;
@@ -126,9 +122,10 @@
   }
   &--2 {
     z-index: 9;
-    top: 9rem;
+    top: 8rem;
   }
   &--3 {
+    //z-index: 7;
     top: 28rem;
 
     @include respond(phone) {
@@ -136,9 +133,10 @@
     }
   }
   &--4 {
-    z-index: 8;
-    top: 1.5rem;
-    right: .7rem;
+    //position: relative;
+    z-index: 99;
+    //top: 1.5rem;
+    left: 12rem;
 
     //@media screen and (min-width: 1200px) {
     //  top: 11.5rem;
