@@ -82,6 +82,10 @@
   @include respond(l-phone) {
     font-size: 2.7rem;
   }
+  @include respond(phone) {
+    display: block;
+    width:100%;
+  }
 }
 
 .header-harbor {
