@@ -46,3 +46,9 @@
   width: 100vw !important;
   background: $blue-mid-2;
 }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

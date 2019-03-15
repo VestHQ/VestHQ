@@ -49,8 +49,12 @@
     text-transform: uppercase;
     font-size: 1.8rem;
     text-decoration: none;
-
+    border: 1px solid transparent;
     padding: 1rem 1.5rem;
+
+    &--border {
+      border: 1px solid $dark-blue;
+    }
 
     @include respond(l-phone) {
       font-size: 1.8rem;
