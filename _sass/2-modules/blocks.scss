@@ -19,6 +19,8 @@
   //position: sticky;
   //top: 0;
 
+  z-index: -2;
+
   margin-bottom: 15%;
 
   &--yellow {
@@ -30,7 +32,7 @@
     background: $yellow;
     padding: 3rem 0;
     margin-left: 1rem;
-    //z-index: -1;
+    z-index: -1;
   }
 
   @include respond(ipad) {
@@ -72,7 +74,7 @@
   width: 45%;
   margin: 0 10%;
   max-width: 50rem;
-  height: 100%;
+  height: 90%;
 
   //position: static !important;
   //position: sticky;
@@ -109,7 +111,7 @@
 
   //position: sticky;
   //top: -300px;
-  //z-index: 11;
+  z-index: 11;
 
   position: relative;
 
@@ -134,9 +136,11 @@
   }
   &--4 {
     //position: relative;
-    z-index: 99;
+    z-index: 9999;
     //top: 1.5rem;
-    left: 12rem;
+    left: 17%;
+    //opacity: .99;
+    transform: scale(1);
 
     //@media screen and (min-width: 1200px) {
     //  top: 11.5rem;
@@ -164,5 +168,39 @@
     font-size: 15rem;
   }
 }
+
+
+
+
+//.block {
+//  position: relative;
+//
+//  &__container {
+//    margin-left: auto;
+//
+//  }
+//  &__visual {
+//    width: 50%;
+//    min-height: 100%;
+//    padding-left: 50%;
+//    transform: translate3d(0,0,0);
+//    position: absolute;
+//    height: 100%;
+//    top: 0;
+//    left: 0;
+//    z-index: 2;
+//  }
+//  &__text {
+//    font-family: $inter-regular;
+//    font-weight: 400;
+//    font-size: 2.4rem;
+//  }
+//}
+
+
+
+
+
+
 
 
