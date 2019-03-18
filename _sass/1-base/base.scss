@@ -42,6 +42,7 @@ body{
   position: relative;
   background: url("../../assets/images/index_bg.png");
   background-size: cover;
+  object-fit: contain;
 
   &--features {
     @extend .full-screen;
