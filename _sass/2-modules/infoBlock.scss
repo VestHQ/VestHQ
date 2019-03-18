@@ -1,7 +1,7 @@
 .info-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   height: 45rem;
   color: $dark-blue;
   margin-bottom: 15rem;
@@ -10,6 +10,7 @@
   .info-block {
     background-color: $blue-mid-2;
     width: 30rem;
+    height: 28rem;
     padding: 4rem 2rem;
     margin: 3rem;
 
@@ -17,6 +18,7 @@
 
     &--about {
       align-self: flex-end;
+      margin-right: 13%;
     }
     &--feature {
       align-self: flex-start;

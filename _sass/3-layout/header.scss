@@ -2,33 +2,28 @@
   font-family: $inter-bold;
   color: $dark-blue;
   text-align: center;
-  position: relative;
-  top: 15vh;
-  bottom: 50vh;
+  //position: relative;
+  //top: 50vh; left: 50vh;
   //transform: translate(-50%, -50%);
-
-  //margin: 25vh auto 10vh auto;
+  margin: calc(50vh - 80px) auto calc(50vh - 80px) auto;
+  //min-width: 100vw;
 
   &__primary {
     font-size: 4.2rem;
     font-weight: 900;
     letter-spacing: 1px;
-    margin: 30vh auto 6vh auto;
     padding: 0 1rem;
 
     @include respond(tab-port) {
       font-size: 3.8rem;
-      margin: 25vh auto 6vh auto;
     }
     @include respond(l-phone) {
       font-size: 3.2rem;
-      margin: 21vh auto 6vh auto;
     }
     @include respond(phone) {
       font-size: 3rem;
     }
     @include respond(m-phone) {
-      margin: 16vh auto 4vh auto;
       font-size: 2.8rem;
     }
   }
@@ -49,16 +44,8 @@
     }
 
     &--feature {
-      width: 66%;
+      width: 95%;
       margin: 0 auto;
-
-      @include respond(laptop) {
-        width: 80%;
-      }
-      @include respond(l-phone) {
-         width: 95%;
-      }
-
     }
   }
 }
@@ -67,9 +54,9 @@
   font-family: $inter-semi-bold;
   color: $dark-blue;
   font-size: 3.6rem;
-  margin: 5rem 0 0 8%;
+  margin: 5rem 0 0 $text-margin-left;
 
-  padding: 4rem 6rem;
+  padding: 4rem 6rem 4rem 0;
   display: inline-block;
   background-image: linear-gradient(to bottom, #fff 69%, rgba(#fff, .2));
   position: sticky;
@@ -92,7 +79,7 @@
   //width: 45%;
   font-family: $inter-semi-bold;
   color: $dark-blue;
-  font-size: 3.3rem;
+  font-size: 3.6rem;
   margin-left: 10%;
   margin-bottom: 2rem;
   line-height: 1.3;

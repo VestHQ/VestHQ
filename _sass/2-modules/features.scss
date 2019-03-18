@@ -8,15 +8,29 @@
   &__title {
     color: $dark-blue;
     font-family: $inter-bold;
-    font-size: 2rem;
+    font-size: 3.6rem;
     margin-bottom: 2rem;
-  }
-  &__text {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
 
     @include respond(phone) {
+      font-size: 2.5rem;
       margin-bottom: 3rem;
+    }
+    @include respond(mid-phone) {
+      font-size: 2.2rem;
+    }
+  }
+  &__text {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+
+    @include respond(l-phone) {
+      font-size: 2rem;
+    }
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+    @include respond(m-phone) {
+      font-size: 1.6rem;
     }
   }
   &__ul {
@@ -36,25 +50,43 @@
 
   }
   &__img {
-    width: auto;
-    max-width: 35rem;
-    height: 35rem;
-    max-height: 40rem;
+    //max-width: 35rem;
+    height: auto;
+    //max-height: 40rem;
 
     &--1 {
+      width: 42rem;
 
+      @include respond(ipad) {
+        width: 30rem;
+      }
     }
 
     &--2 {
+      width: 51rem;
+
+      @include respond(ipad) {
+        width: 37rem;
+      }
       @include respond(phone) {
         order: 1;
+        width: 35rem;
+      }
+      @include respond(m-phone) {
+        width: 30rem;
       }
     }
     &--3 {
-
-    }
-    @include respond(phone) {
-      height: 27rem;
+      width: 50rem;
+      @include respond(ipad) {
+        width: 35rem;
+      }
+      @include respond(phone) {
+        width: 35rem;
+      }
+      @include respond(m-phone) {
+        width: 30rem;
+      }
     }
   }
 }
