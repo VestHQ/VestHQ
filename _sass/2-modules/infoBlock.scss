@@ -9,23 +9,38 @@
   @include respond(l-phone){
     margin-bottom: 24rem;
   }
+  @include respond(phone){
+    align-items: center;
+  }
 
 
   .info-block {
     background-color: $blue-mid-2;
     width: 30rem;
-    height: 28rem;
+    height: 27rem;
     padding: 4rem 2rem;
     margin: 3rem;
 
     position: relative;
 
+    @include respond(phone){
+      height: 24rem;
+    }
+
     &--about {
       align-self: flex-end;
       margin-right: 13%;
+
+      @include respond(m-phone){
+        margin: 0 auto 3rem auto;
+      }
     }
     &--feature {
       align-self: flex-start;
+
+      @include respond(m-phone){
+        margin: 0 auto;
+      }
     }
 
     &__title {
