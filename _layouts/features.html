@@ -4,17 +4,8 @@
   {% include meta.html %}
 </head>
 <body>
-  <header class="header-container">
-      <nav class="nav u-margin-nav">
-          <a href="{{ site.baseurl }}/" class="nav__link">
-              <img src="{{ site.baseurl }}/assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
-          </a>
 
-          <a href="{{ site.baseurl }}/team" class="nav__item">About</a>
-          <a href="{{ site.baseurl }}/features" class="nav__item">Features</a>
-          <a href="https://harborhq.com/" class="nav__item nav__item--border">Visit Harbor</a>
-      </nav>
-  </header>
+  {% include nav.html %}
   {% include features.html %}
   {% include modules.html %}
   {% include footer.html %}
