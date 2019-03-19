@@ -6,8 +6,8 @@
   color: $dark-blue;
   margin-bottom: 15rem;
 
-  @include respond(l-phone){
-    margin-bottom: 24rem;
+  @include respond(phone){
+    margin-bottom: 14rem;
   }
   @include respond(phone){
     align-items: center;
@@ -23,8 +23,14 @@
 
     position: relative;
 
-    @include respond(phone){
+    @include respond(l-phone){
       height: 24rem;
+      padding: 2rem;
+    }
+
+    @include respond(mid-phone){
+      height: 22rem;
+      padding: 2rem;
     }
 
     &--about {
@@ -32,7 +38,7 @@
       margin-right: 13%;
 
       @include respond(m-phone){
-        margin: 0 auto 3rem auto;
+        margin: 0 auto 4rem auto;
       }
     }
     &--feature {
@@ -48,6 +54,10 @@
       margin-bottom: 2rem;
       font-size: 1.8rem;
       text-align: center;
+
+      @include respond(phone){
+        padding-top: 1rem;
+      }
     }
     &__text {
       font-family: $inter-regular;
