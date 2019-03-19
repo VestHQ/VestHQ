@@ -1,15 +1,15 @@
 .team {
-  margin: 12% auto 4rem auto;
+  margin: 25vh auto 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   max-width: 120rem;
   //margin: 4rem auto;
-  font-family: 'Avenir Next', $avenir;
   color: $dark-blue;
 
   &__heading {
+    font-family: $inter-semi-bold;
     margin: 0 4rem;
     font-weight: 600;
     font-size: 2.2rem;
@@ -17,6 +17,7 @@
   }
 
   &__secondary {
+    font-family: $inter-regular;
     font-size: 1.6rem;
     width: 55%;
   }

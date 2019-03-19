@@ -54,14 +54,19 @@
 
     const navigation = document.getElementsByClassName('headroom');
 
-    const changingText = document.getElementsByClassName('header-tertiary');
+    const changingText = document.getElementsByClassName('header-retirement');
 
     window.onscroll = function () {
         if(changingText[0]) {
 
         }
-    }
+    };
 
+    range = document.createRange();
+    range.selectNode(document.getElementById("previousTextUnstick"));
+    bool = range.isPointInRange(document.getElementById("retirementText"));
+
+    console.log(bool)
 
 
 </script>

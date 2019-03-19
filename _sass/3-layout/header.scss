@@ -46,11 +46,15 @@
     &--feature {
       width: 95%;
       margin: 0 auto;
+
+      @media screen and (min-width: 1340px) {
+        width: 80%;
+      }
     }
   }
 }
 
-.header-tertiary {
+.header-retirement {
   font-family: $inter-semi-bold;
   color: $dark-blue;
   font-size: 3.6rem;
@@ -63,36 +67,33 @@
   top: 0;
   z-index: 12;
 
+  width: 55%;
+
   @include respond(tab-port) {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
   @include respond(l-phone) {
     font-size: 2.7rem;
   }
   @include respond(phone) {
-    display: block;
-    width:100%;
+    margin-left: 4rem;
+    width: 60%;
   }
 }
 
 .header-harbor {
-  //width: 45%;
+  @extend .block-section__text--yellow;
+  @extend .block-content;
   font-family: $inter-semi-bold;
   color: $dark-blue;
   font-size: 3.6rem;
-  margin-left: 10%;
   margin-bottom: 2rem;
   line-height: 1.3;
 
   @include respond(phone) {
     font-size: 2.5rem;
-    margin-left: 4.5rem;
   }
   @include respond(mid-phone) {
     font-size: 2.2rem;
-    margin-left: 4rem;
-  }
-  @include respond(m-phone) {
-    margin-left: 3.3rem;
   }
 }

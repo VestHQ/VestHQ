@@ -33,16 +33,17 @@ body{
 }
 
 .full-screen {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   height: 100vh;
   margin: 0 auto; //-> was causing nav to not be centered on big screen
-  max-width: $max-page-width;
+  //max-width: $max-page-width;
   position: relative;
   background: url("../../assets/images/index_bg.png");
   background-size: cover;
-  object-fit: contain;
+  //object-fit: contain;
 
   &--features {
     @extend .full-screen;

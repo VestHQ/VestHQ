@@ -1,10 +1,7 @@
 .block-wrapper {
   position: relative;
-  max-width: $max-page-width;
-  margin: 0 auto;
-  //display: grid;
-  //grid-template-rows: 1fr 1fr 1fr 1fr;
-  //grid-template-columns: 1fr;
+  max-width: 110rem;
+  margin: 0 auto 15% auto;
 }
 
 .block-section {
@@ -17,12 +14,9 @@
   width: 100%;
 
   position: relative;
-  //position: sticky;
-  //top: 0;
-
   z-index: -2;
 
-  margin-bottom: 15%;
+  margin-bottom: 5rem;
 
   &--yellow {
     @extend .block-section;
@@ -52,6 +46,7 @@
     line-height: 1.5;
     z-index: -1;
     background: #fff;
+    width: 85%;
 
     &--yellow {
       background: $yellow;
@@ -80,7 +75,6 @@
 
   //position: static !important;
   //position: sticky;
-  top: 100px;
   z-index: -1;
 
   @include respond(phone) {
@@ -107,30 +101,34 @@
 }
 
 .block {
-  width: 40rem;
+  width: 35rem;
   height: auto;
+  //margin: 15% auto;
   //margin: 2rem;
 
   //position: sticky;
   //top: -300px;
-  z-index: 11;
+  //z-index: 13;
 
   position: relative;
 
   & > * {
-    margin-bottom: 2rem;
+
   }
 
   &--1 {
     //z-index: 10;
+    margin-bottom: 8%;
   }
   &--2 {
     //z-index: 9;
     //top: 8rem;
+    margin-bottom: 8%;
   }
   &--3 {
     //z-index: 7;
     //top: 28rem;
+    margin-bottom: 8%;
   }
   &--4 {
     //position: relative;

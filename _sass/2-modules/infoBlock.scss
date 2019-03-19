@@ -6,6 +6,10 @@
   color: $dark-blue;
   margin-bottom: 15rem;
 
+  @include respond(l-phone){
+    margin-bottom: 24rem;
+  }
+
 
   .info-block {
     background-color: $blue-mid-2;
