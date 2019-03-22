@@ -22,10 +22,10 @@
     @extend .block-section;
     max-height: 40rem;
     height: auto;
-    //width: 90%;
+    //width: 100vw !important;
     //display: block;
-    //background: $yellow;
-    background: linear-gradient(to left, #fff 10%,#fff 10%,#fff 10%,$yellow 10%,$yellow 10%);
+    background: $yellow;
+    //background: linear-gradient(to left, #fff 10%,#fff 10%,#fff 10%,$yellow 10%,$yellow 10%);
     //padding: 3rem 0;
     margin-left: 1rem;
     z-index: 15;
@@ -45,12 +45,12 @@
     font-size: 2.4rem;
     line-height: 1.5;
     z-index: -1;
-    background: #fff;
+    background: $bg-color;
     width: 85%;
 
     &--yellow {
       background: $yellow;
-      min-width: 25rem;
+      //width: 25rem;
 
       @include respond(m-phone) {
         min-width: 22rem;

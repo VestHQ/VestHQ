@@ -1,7 +1,7 @@
 .footer {
   flex-shrink: 0;
 
-  background-color: $blue-mid-2;
+  background-color: #fff;
   border-radius: 3px;
   margin: 3rem auto auto auto;
   padding: 4rem 1rem;
@@ -38,7 +38,8 @@
 
     }
     li {
-      margin-bottom: 2px;
+      margin-bottom: 1.2rem;
+
       @include respond(xs-phone) {
         font-size: 1rem;
       }
@@ -84,7 +85,9 @@
   }
 }
 
-
+.contact {
+  line-height: 1.7;
+}
 
 
 

@@ -2,6 +2,7 @@
   font-family: $inter-bold;
   color: $dark-blue;
   text-align: center;
+  background: $bg-top;
   //position: relative;
   //top: 50vh; left: 50vh;
   //transform: translate(-50%, -50%);
@@ -9,7 +10,7 @@
   //min-width: 100vw;
 
   &__primary {
-    font-size: 4.2rem;
+    font-size: 5.5rem;
     font-weight: 900;
     letter-spacing: 1px;
     padding: 0 1rem;
@@ -30,7 +31,7 @@
 
   &__secondary {
     font-family: $inter-light;
-    font-size: 2.8rem;
+    font-size: 3rem;
     //margin: 0 1rem;
 
     @include respond(tab-port) {
@@ -46,6 +47,8 @@
     &--feature {
       width: 95%;
       margin: 0 auto;
+      line-height: 1.7;
+      letter-spacing: 1px;
 
       @media screen and (min-width: 1340px) {
         width: 80%;
@@ -62,7 +65,7 @@
 
   padding: 4rem 2rem 4rem 0;
   display: inline-block;
-  background-image: linear-gradient(to bottom, #fff 69%, rgba(#fff, .2));
+  background-image: linear-gradient(to bottom, $bg-color 69%, rgba($bg-color, .2));
   position: sticky;
   top: 0;
   z-index: 12;

@@ -28,7 +28,7 @@ body{
   font-family: $inter-regular;
   //max-width: $max-page-width;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: $bg-color;
   //margin: 0 auto;
 }
 
@@ -41,19 +41,11 @@ body{
   margin: 0 auto; //-> was causing nav to not be centered on big screen
   //max-width: $max-page-width;
   position: relative;
-  background: url("../../assets/images/index_bg.png");
-  background-size: cover;
-  //object-fit: contain;
+  background: $bg-top;
 
   &--features {
     @extend .full-screen;
-    //width: 100vw;
-    background: url("../../assets/images/features_bg.png");
     margin-bottom: 4rem;
-
-    @include respond(phone) {
-      background-position: right;
-    }
   }
 
 }

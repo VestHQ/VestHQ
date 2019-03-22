@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960.264 772.849">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.1;
+        fill: url(#pattern);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #001966;
+        font-size: 42px;
+        font-family: Inter-Bold, Inter;
+        letter-spacing: 0.01em;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-family: Inter-Regular, Inter;
+        font-weight: 400;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #ffe01a;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 304 317">
+      <image width="304" height="317" xlink:href="data:image/png;base64,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"/>
+    </pattern>
+  </defs>
+  <g id="Group_193" data-name="Group 193" transform="translate(-322.209 -2610)">
+    <rect id="Rectangle_84" data-name="Rectangle 84" class="cls-1" width="960.264" height="772.849" transform="translate(322.209 2610)"/>
+    <g id="Group_85" data-name="Group 85" transform="translate(329.564 2655.074)">
+      <rect id="Rectangle_85" data-name="Rectangle 85" class="cls-2" width="873.713" height="639.476"/>
+    </g>
+    <text id="_6x_More_Participation_5x_More_Savings_4x_Less_Withdrawals" data-name="6x More Participation
+5x More Savings
+4x Less Withdrawals" class="cls-3" transform="translate(591.97 2921.579)"><tspan x="0" y="0">6x More</tspan><tspan class="cls-4" y="0" xml:space="preserve"> Participation</tspan><tspan x="0" y="98">5x More</tspan><tspan class="cls-4" y="98" xml:space="preserve"> Savings</tspan><tspan x="0" y="196">4x Less</tspan><tspan class="cls-4" y="196" xml:space="preserve"> Withdrawals</tspan></text>
+    <path id="Path_58" data-name="Path 58" class="cls-5" d="M2498.351,640.592l15.461,19.823,35.48-35.479" transform="translate(-2016.294 2275.466)"/>
+    <path id="Path_101" data-name="Path 101" class="cls-5" d="M2498.351,640.592l15.461,19.823,35.48-35.479" transform="translate(-2016.294 2368.941)"/>
+    <path id="Path_102" data-name="Path 102" class="cls-5" d="M2498.351,640.592l15.461,19.823,35.48-35.479" transform="translate(-2016.294 2459.92)"/>
+  </g>
+</svg>
