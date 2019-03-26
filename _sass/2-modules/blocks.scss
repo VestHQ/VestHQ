@@ -1,7 +1,7 @@
 .block-wrapper {
   position: relative;
-  max-width: 110rem;
-  margin: 0 auto 15% auto;
+  //width: 110rem;
+  //margin: 0 auto 15% auto;
 }
 
 .block-section {
@@ -11,24 +11,28 @@
   align-items: center;
   align-content: center;
   height: 100%;
-  width: 100%;
+  width: 90%;
+  max-width: 110rem;
+  margin: 0 auto;
 
   position: relative;
   z-index: -2;
 
   margin-bottom: 5rem;
 
+  @include respond(mid-phone){
+    width: 100%;
+  }
+
   &--yellow {
     @extend .block-section;
     max-height: 40rem;
     height: auto;
-    //width: 100vw !important;
     //display: block;
     background: $yellow;
     //background: linear-gradient(to left, #fff 10%,#fff 10%,#fff 10%,$yellow 10%,$yellow 10%);
-    //padding: 3rem 0;
-    margin-left: 1rem;
     z-index: 15;
+    //position: sticky;
   }
 
   @include respond(ipad) {
@@ -53,7 +57,7 @@
       //width: 25rem;
 
       @include respond(m-phone) {
-        min-width: 22rem;
+        //min-width: 22rem;
       }
     }
 

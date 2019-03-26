@@ -52,12 +52,28 @@
 }
 
 .col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  //display: flex;
+  //flex-direction: column;
+  //width: 100%;
 }
 
 .bottom {
   position: absolute;
   bottom:0;
 }
+
+#fill-width {
+  min-width: 100vw !important;
+  background: $yellow;
+  position: relative;
+  z-index: 15;
+
+  margin-bottom: 9%;
+}
+.section-width {
+  position: sticky !important;
+  top: 0;
+  z-index: 15 !important;
+  @extend .block-section;
+}
+

@@ -34,6 +34,7 @@ body{
 
 .full-screen {
   overflow-x: hidden;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

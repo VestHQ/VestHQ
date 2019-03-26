@@ -61,16 +61,13 @@
   font-family: $inter-semi-bold;
   color: $dark-blue;
   font-size: 3.6rem;
-  margin: 5rem 0 0 $text-margin-left;
-
+  margin: 0 0 0 $text-margin-left;
   padding: 4rem 2rem 4rem 0;
   display: inline-block;
-  background-image: linear-gradient(to bottom, $bg-color 69%, rgba($bg-color, .2));
+  background-image: linear-gradient(to bottom, $bg-color 69%, rgba($bg-color,0.2));
   position: sticky;
   top: 0;
   z-index: 12;
-
-  //width: 55%;
 
   @include respond(tab-port) {
     font-size: 3.3rem;
