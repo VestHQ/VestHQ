@@ -3,11 +3,10 @@
   color: $dark-blue;
   text-align: center;
   background: $bg-top;
-  //position: relative;
-  //top: 50vh; left: 50vh;
-  //transform: translate(-50%, -50%);
-  margin: calc(50vh - 80px) auto calc(50vh - 80px) auto;
-  //min-width: 100vw;
+  margin: calc(50vh - 80px) auto 0 auto;
+  min-width: 100vw;
+
+  //@include absCenter;
 
   &__primary {
     font-size: 5.5rem;
