@@ -7,9 +7,9 @@
   height: auto;
   margin-bottom: 15rem;
 
-  //@include respond(phone){
-  //  margin-bottom: 14rem;
-  //}
+  @include respond(m-phone){
+    margin-bottom: 10rem;
+  }
 
 
   .info-block {
