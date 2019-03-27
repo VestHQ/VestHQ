@@ -38,7 +38,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  height: 100vh;
+  max-height: 100vh;
   margin: 0 auto; //-> was causing nav to not be centered on big screen
   //max-width: $max-page-width;
   position: relative;
@@ -69,3 +69,8 @@ img {
 }
 
 
+// for when a user highlights text on page
+::selection {
+  background-color: $blue-mid-3;
+  //color: $dark-blue;
+}

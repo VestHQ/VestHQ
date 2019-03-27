@@ -3,13 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  margin: 3% auto 0 auto;
+  margin: 1rem auto;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &__text {
     font-family: $inter-regular;
     color: #000;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     transform: rotate(90deg);
   }
   &__icon {
