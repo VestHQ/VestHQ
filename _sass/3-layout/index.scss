@@ -6,9 +6,12 @@
   margin: 1rem auto;
 
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 3rem;
+  left: 45%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+
+  animation: fadeIn forwards 400ms ease-in 300ms;
 
   &__text {
     font-family: $inter-regular;

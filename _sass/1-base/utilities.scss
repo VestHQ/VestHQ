@@ -74,6 +74,14 @@
   position: sticky !important;
   top: 0;
   z-index: 15 !important;
+  margin-bottom: -9rem !important;
   @extend .block-section;
+
+  @include respond(l-phone){
+    margin-bottom: -6rem !important;
+  }
+  @include respond(mid-phone){
+    margin-bottom: -4rem !important;
+  }
 }
 

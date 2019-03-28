@@ -6,6 +6,9 @@
   margin: calc(50vh - 80px) auto 0 auto;
   min-width: 100vw;
 
+  opacity: 0;
+  animation: fadeInOpacity forwards 400ms ease-in 100ms;
+
   //@include absCenter;
 
   &__primary {
