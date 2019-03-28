@@ -52,6 +52,12 @@
     background: $bg-color;
     width: 85%;
 
+
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
     &--yellow {
       background: $yellow;
       //width: 25rem;
@@ -98,7 +104,7 @@
   padding: 1px 3px;
 
   &--1{
-    background: $blue-mid-2;
+    background: $bg-top;
   }
   &--2 {
     background: $blue-mid-3;
@@ -126,17 +132,17 @@
 
   &--1 {
     //z-index: 10;
-    margin-bottom: 8%;
+    //margin-bottom: 8%;
   }
   &--2 {
     //z-index: 9;
     //top: 8rem;
-    margin-bottom: 8%;
+    //margin-bottom: 8%;
   }
   &--3 {
     //z-index: 7;
     //top: 28rem;
-    margin-bottom: 8%;
+    //margin-bottom: 8%;
   }
   &--4 {
 
