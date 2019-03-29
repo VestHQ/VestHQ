@@ -78,11 +78,11 @@
 
 
 
-         <main class="header u-feature-width">
+         <main class="header u-feature-width" data-aos="fade-up" data-aos-easing="ease-out" data-aos-delay="200"  data-aos-duration="1000">
              <h1 class="header__primary">Harbor's Features</h1>
              <h2 class="header__secondary header__secondary--feature">Harbor decreases your operational burdens, while increasing plan participation and assets. Together, we can scale the markets.</h2>
          </main>
-       <div class="explore">
+       <div class="explore" data-aos="fade-down" data-aos-easing="ease-in" data-aos-delay="1000"  data-aos-duration="800">
            <p class="explore__text">Explore Below</p>
            <img src="/assets/images/squiggle.png" alt="squiggle" class="explore__icon">
        </div>
@@ -177,16 +177,16 @@
             <ul>
                 <li><a href="/team/">About</a></li>
                 <li><a href="/features/">Features</a></li>
-                <li><a href="https://harborhq.com">Visit Harbor</a></li>
+                <li><a href="https://harborhq.com" target="_blank" rel="noopener">Visit Harbor</a></li>
 
             </ul>
         </div>
 
         <div>
             <ul>
-                <li><a href="/assets/pdf/terms.pdf" target="_blank">Terms</a></li>
-                <li><a href="/assets/pdf/security.pdf" target="_blank">Security</a></li>
-                <li><a href="/assets/pdf/privacy.pdf" target="_blank">Privacy</a></li>
+                <li><a href="/assets/pdf/terms.pdf" target="_blank" rel="noopener">Terms</a></li>
+                <li><a href="/assets/pdf/security.pdf" target="_blank" rel="noopener">Security</a></li>
+                <li><a href="/assets/pdf/privacy.pdf" target="_blank" rel="noopener">Privacy</a></li>
 
             </ul>
         </div>
@@ -259,22 +259,22 @@
 
     AOS.init();
 
-    const block1 = document.getElementsByClassName('block--1');
+    // const block1 = document.getElementsByClassName('block--1');
     // console.log(block1)
 
 
-    const navigation = document.getElementsByClassName('headroom');
+    // const navigation = document.getElementsByClassName('headroom');
 
-    const changingText = document.getElementsByClassName('header-retirement');
+    // const changingText = document.getElementsByClassName('header-retirement');
 
-    window.onscroll = function () {
-        if(changingText[0]) {
+    // window.onscroll = function () {
+    //     if(changingText[0]) {
+    //
+    //     }
+    // };
 
-        }
-    };
-
-    const lastText = $("previousTextUnstick");
-    const retirementText = $("retirementText");
+    // const lastText = $("previousTextUnstick");
+    // const retirementText = $("retirementText");
 
 
     // range = document.createRange();
@@ -282,28 +282,46 @@
     // bool = range.isPointInRange(document.getElementById("retirementText"));
     // console.log(bool)
 
-    var isColliding = function( $div1, $div2 ) {
-    	// Div 1 data
-    	var d1_offset             = $div1.offset();
-    	var d1_height             = $div1.outerHeight( true );
-    	var d1_width              = $div1.outerWidth( true );
-    	var d1_distance_from_top  = d1_offset.top + d1_height;
-    	var d1_distance_from_left = d1_offset.left + d1_width;
-
-    	// Div 2 data
-    	var d2_offset             = $div2.offset();
-    	var d2_height             = $div2.outerHeight( true );
-    	var d2_width              = $div2.outerWidth( true );
-    	var d2_distance_from_top  = d2_offset.top + d2_height;
-    	var d2_distance_from_left = d2_offset.left + d2_width;
-
-    	var not_colliding = ( d1_distance_from_top < d2_offset.top || d1_offset.top > d2_distance_from_top || d1_distance_from_left < d2_offset.left || d1_offset.left > d2_distance_from_left );
-
-    	// Return whether it IS colliding
-    	return ! not_colliding;
-    };
+    // var isColliding = function( $div1, $div2 ) {
+    // 	// Div 1 data
+    // 	var d1_offset             = $div1.offset();
+    // 	var d1_height             = $div1.outerHeight( true );
+    // 	var d1_width              = $div1.outerWidth( true );
+    // 	var d1_distance_from_top  = d1_offset.top + d1_height;
+    // 	var d1_distance_from_left = d1_offset.left + d1_width;
+    //
+    // 	// Div 2 data
+    // 	var d2_offset             = $div2.offset();
+    // 	var d2_height             = $div2.outerHeight( true );
+    // 	var d2_width              = $div2.outerWidth( true );
+    // 	var d2_distance_from_top  = d2_offset.top + d2_height;
+    // 	var d2_distance_from_left = d2_offset.left + d2_width;
+    //
+    // 	var not_colliding = ( d1_distance_from_top < d2_offset.top || d1_offset.top > d2_distance_from_top || d1_distance_from_left < d2_offset.left || d1_offset.left > d2_distance_from_left );
+    //
+    // 	// Return whether it IS colliding
+    // 	return ! not_colliding;
+    // };
     // console.log(lastText)
     // isColliding(retirementText, lastText)
+
+    // $(window).scroll(function(e){
+    //     var $el = $('.fixedElement');
+    //     var isPositionFixed = ($el.css('position') === 'fixed');
+    //     if ($(this).scrollTop() > 200 && !isPositionFixed){
+    //         $el.css({'position': 'fixed', 'top': '0px'});
+    //     }
+    //     if ($(this).scrollTop() < 200 && isPositionFixed){
+    //         $el.css({'position': 'static', 'top': '0px'});
+    //     }
+    // });
+
+    // $(".block-section--end").stick_in_parent();
+
+    //stop retirementText from being sticky 100px above 3rd block-section__text
+
+    // if retirementText is w/in
+
 
 
 </script>

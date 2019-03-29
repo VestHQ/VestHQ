@@ -71,8 +71,8 @@
   margin: 9% auto;
 }
 .section-width {
-  position: sticky !important;
-  top: 0;
+  //position: sticky !important;
+  //top: 0;
   z-index: 15 !important;
   margin-bottom: -9rem !important;
   @extend .block-section;
@@ -85,3 +85,4 @@
   }
 }
 
+//.u-mg-top-neg { margin-top: -20rem !important;}

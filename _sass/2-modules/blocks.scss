@@ -18,7 +18,9 @@
   position: relative;
   z-index: -2;
 
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+
+  user-select: text;
 
   @include respond(mid-phone){
     width: 100%;
@@ -52,11 +54,10 @@
     background: $bg-color;
     width: 85%;
 
-
     -moz-user-select: text;
     -webkit-user-select: text;
     -ms-user-select: text;
-    user-select: text;
+    user-select: text !important;
 
     &--yellow {
       background: $yellow;
@@ -104,7 +105,7 @@
   padding: 1px 3px;
 
   &--1{
-    background: $bg-top;
+    background: $bg-top-2;
   }
   &--2 {
     background: $blue-mid-3;
@@ -115,7 +116,7 @@
 }
 
 .block {
-  width: 35rem;
+  width: 31rem;
   height: auto;
   //margin: 15% auto;
   margin: 2rem;
@@ -164,7 +165,12 @@
 }
 
 
-
+#previousTextUnstick {
+  position: sticky !important;
+  top: 0 !important;
+  height: .1rem;
+  width: 100%;
+}
 
 
 
