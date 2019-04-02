@@ -48,8 +48,9 @@
     font-size: 1.6rem;
     text-decoration: none;
     padding: 1.4rem 1.5rem 1rem 1.5rem;
-
     align-self: stretch;
+
+
 
     @include respond(l-phone) {
       font-size: 1.8rem;
@@ -67,6 +68,7 @@
     &:hover,
     &:focus,
     &:active {
+      transition: background-color 400ms;
       background: $yellow;
     }
   }

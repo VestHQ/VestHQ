@@ -141,7 +141,7 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
         <h3 class="header-retirement" id="retirementText">Retirement is changing...</h3>
     </div>
 
-    <section class="block-section">
+    <section class="block-section" data-aos="fade-up">
         <div class="block-content">
             <h3 class="block-section__text">... for millions of
                 <mark class="highlight highlight--1">people</mark>
@@ -149,11 +149,10 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
             </h3>
         </div>
 
-        <img src="/assets/images/blocks/block-1.png" alt="block" class="block block--1"
-             data-aos="fade-up">
+        <img src="/assets/images/blocks/block-1.png" alt="block" class="block block--1">
     </section>
 
-    <section class="block-section">
+    <section class="block-section" data-aos="fade-up">
         <div class="block-content">
             <h3 class="block-section__text">... for
                 <mark class="highlight highlight--2">employers</mark>
@@ -165,7 +164,7 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
              class="block block--2" data-aos="fade-up">
     </section>
 
-    <div class="block-section">
+    <div class="block-section" data-aos="fade-up">
         <div class="block-content">
             <!-- <div id="previousTextUnstick"></div>-->
             <h3 class="block-section__text">... for
@@ -174,14 +173,13 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
             </h3>
         </div>
 
-        <img src="/assets/images/blocks/3-blocks.png" alt="block stacking" class="block block--3"
-             data-aos="fade-up">
+        <img src="/assets/images/blocks/3-blocks.png" alt="block stacking" class="block block--3">
     </div>
 
 <!--</div>-->
 
 
-<div id="fill-width">
+<div id="fill-width" data-aos="fade-up">
     <section class="block-section--yellow sticky">
         <div class="col">
             <h4 class="header-harbor">Harbor connects us all together...</h4>
@@ -200,13 +198,13 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
 
   <section class="info-container">
 
-    <div class="info-block info-block--about">
+    <div class="info-block info-block--about" data-aos="fade-right">
         <h4 class="info-block__title">ABOUT</h4>
         <p class="info-block__text">We love maximizing retirement outcomes. By bringing together our years of experience in behavioral economics, designing enterprise-grade systems, legal and finance expertise, our mission is to increase retirement readiness.</p>
         <a href="#" class="info-block__cta">Learn More ></a>
     </div>
 
-    <div class="info-block info-block--feature">
+    <div class="info-block info-block--feature" data-aos="fade-left">
             <h4 class="info-block__title">FEATURES</h4>
             <p class="info-block__text">Harbor is changing the way providers interact with their participants. We leverage next generation technologies to increase efficiency of delivering a powerful 401(k) experience.</p>
             <a href="#" class="info-block__cta">Learn More ></a>
@@ -260,6 +258,21 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
 
 <script async>
     //////////// HEADROOM navbar hide on scroll down and show on scroll up //////
+
+
+    // if scrolled to element --do something function
+    // $(document).on('scroll', function() {
+    //     if($(this).scrollTop()>=$('.section-width').position().top){
+    //         alert("meow");
+    //     }
+    // });
+
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() >= 300) {
+    //         $('.explore').delete();
+    //         // alert($('.explore').style.css.opacity);
+    //     }
+    // });
 
 
     // $(".nav").headroom();
