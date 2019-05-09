@@ -23,6 +23,8 @@
 
     position: relative;
 
+    text-align: center;
+
     @include respond(phone){
       height: 30rem;
       padding: 2rem;
