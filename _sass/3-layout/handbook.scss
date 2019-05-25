@@ -1,0 +1,83 @@
+.handbook-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.handbook-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  margin-top: 15vh;
+  margin-left: 2vw;
+
+  .handbook-nav-list {
+    list-style: none;
+    min-width: 20rem;
+
+    &__item {
+      font-size: 1.6rem;
+      color: $grey;
+      padding: .6rem .8rem;
+
+      &:hover {
+        background-color: $grey-light;
+        border-radius: 3px;
+      }
+
+      &:not(last-child) {
+        margin: .7rem 0;
+      }
+    }
+  }
+}
+
+.heading-1 {
+  font-family: $inter-semi-bold;
+  font-size: 4.8rem;
+  color: $grey;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.heading-2 {
+  font-size: 2.8rem;
+  color: $grey;
+  margin-bottom: .6rem;
+}
+
+.heading-3 {
+  font-size: 1.8rem;
+}
+
+.heading-4 {
+  font-family: $inter-semi-bold;
+  font-size: 2.2rem;
+  color: $grey;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 66.666vw;
+  margin: 12vh auto 2rem auto;
+
+  &__text {
+    font-size: 1.6rem;
+    font-family: $inter-light;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  &__list {
+    margin-left: 5%;
+    margin-bottom: 3rem;
+
+    &__item {
+      @extend .article__text;
+      line-height: 1;
+    }
+  }
+}
