@@ -93,7 +93,6 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
         console.log("sadsd")
         if (this.scrollTop > 650) {
             text.addClass("sticky");
-            console.log("sadsd")
         } else {
             text.removeClass("sticky");
         }
@@ -102,17 +101,28 @@ Sticky-kit v1.1.2 | WTFPL | Leaf Corcoran 2015 | http://leafo.net
     console.log("sadsd")
 </script>
 </head>
+<style>
+    body {
+        background-color: #fcfcfc;
+    }
+    .headroom--pinned {
+        background-color: #fcfcfc !important;
+    }
+</style>
 <body>
 
     <header class="header-container">
     <nav class="nav u-margin-nav">
-        <a href="/" class="nav__link">
-            <img src="/assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
-        </a>
+<!--        <div class="width-80">-->
+            <a href="/" class="nav__link">
+                <img src="/assets/images/vestlogo-colors.png" alt="vest logo" class="nav__logo">
+            </a>
 
-        <a href="/team" class="nav__item">about</a>
-        <a href="/features" class="nav__item">features</a>
-        <a href="https://harborhq.com/" class="nav__item">visit harbor</a>
+            <a href="/team" class="nav__item">about</a>
+            <a href="/features" class="nav__item">features</a>
+            <a href="https://harborhq.com/" class="nav__item">visit harbor</a>
+<!--        </div>-->
+
     </nav>
 </header>
 
