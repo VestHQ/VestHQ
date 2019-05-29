@@ -53,6 +53,7 @@
     z-index: -1;
     background: $bg-color;
     width: 85%;
+    margin-top: 1.5rem;
 
     -moz-user-select: text;
     -webkit-user-select: text;
@@ -102,13 +103,16 @@
 }
 
 .highlight {
-  padding: 1px 3px;
+  display: inline;
+  padding: 3px 5px;
+  margin-bottom: 2rem;
 
   &--1{
     background: $bg-top-2;
   }
   &--2 {
     background: $blue-mid-3;
+    color: #fff;
   }
   &--3 {
     background: $yellow;
