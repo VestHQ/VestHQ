@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 .nav{
-  width: 100vw;
+  //width: 100vw;
   font-family: $inter-light;
   max-width: $max-page-width;
   padding-top: 3.5rem;
@@ -89,8 +89,8 @@
   //box-shadow: 0 -4px 30px 0 rgba(0,0,0,.1);
 
 
-  min-width: 100vw;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  //min-width: 100vw;
+  //box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 .headroom--pinned {
   transform: translateY(0%);
